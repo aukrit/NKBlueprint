@@ -29,6 +29,7 @@
 		BE5A41AC11A4126200722733 /* nkalertsheet.html in Resources */ = {isa = PBXBuildFile; fileRef = BE5A41AB11A4126200722733 /* nkalertsheet.html */; };
 		BE9CDACC0FB8389700FFB649 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9CDACA0FB8389700FFB649 /* AVFoundation.framework */; };
 		BE9CDACD0FB8389700FFB649 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9CDACB0FB8389700FFB649 /* SystemConfiguration.framework */; };
+		BEA91A2A11A420600079817B /* changelog.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEA91A2911A420600079817B /* changelog.txt */; };
 		BEAC17B00F98BE3600A76568 /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = BEAC17AF0F98BE3600A76568 /* main.html */; };
 		BEAC17B40F98BE5300A76568 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAC17B30F98BE5300A76568 /* AddressBook.framework */; };
 		BEAC17CA0F98BE7700A76568 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAC17C90F98BE7700A76568 /* CFNetwork.framework */; };
@@ -68,6 +69,7 @@
 		BE828A2110BD3648001976AB /* NKBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKBridge.h; sourceTree = "<group>"; };
 		BE9CDACA0FB8389700FFB649 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BE9CDACB0FB8389700FFB649 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BEA91A2911A420600079817B /* changelog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changelog.txt; sourceTree = "<group>"; };
 		BEAC17A00F98BE2000A76568 /* Nimble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nimble.h; sourceTree = "<group>"; };
 		BEAC17AF0F98BE3600A76568 /* main.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = main.html; sourceTree = "<group>"; };
 		BEAC17B30F98BE5300A76568 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				1E3B195F119AB45C00AB5181 /* readme.txt */,
+				BEA91A2911A420600079817B /* changelog.txt */,
 				1E3B1A07119AF76500AB5181 /* nk_background.png */,
 				1E692E471199BC1200D342C9 /* Default.png */,
 				1E692E2C1199BA6A00D342C9 /* Icon.png */,
@@ -278,6 +281,7 @@
 				1EE3168811A026D6004D6F9A /* about.html in Resources */,
 				1E8A542D11A3FF080071122E /* chevron.png in Resources */,
 				BE5A41AC11A4126200722733 /* nkalertsheet.html in Resources */,
+				BEA91A2A11A420600079817B /* changelog.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
