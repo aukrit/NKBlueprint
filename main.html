@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>			<!-- Link to NimbleKit js file -->
+<script type="text/javascript" src="javascript.js"></script>	<!-- Link to custom js file (user created) -->
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+// NavController =============================================================
+// Create a Navigation Controller (bar at top of screen)
+var navController = new NKNavigationController();	/* Creates the Navigation Controller */
+navController.setTitle("Home");						/* Sets the title that will be visible in other pages */
+navController.setTintColor(50, 115, 173);			/* Sets the NavController bar color in RGB */
+navController.setImage("nkbpnavbarlogo.png");		/* Adds an image (transparent png) to the NavController, replaces title "Home" */
+navController.setUsesPreloading("yes");				/* Tells NavController to preload pages before moving to them */
+
+</script>
+
+
+<h2>Misc</h2>
+<ul>
+<li><a href="#" onClick="navController.gotoPage('about.html'), navController.setTitleForPage('About NK Blueprint', 'about.html')">About NK Blueprint</a></li>
+</ul>
+
+<h2>Alerts</h2>
+<ul>
+<li><a href="#" onClick="navController.gotoPage('nkalert.html'), navController.setTitleForPage('NK Alert', 'nkalert.html')">NKAlert</a></li>
+<li><a href="#" onClick="navController.gotoPage('nkalertsheet.html'), navController.setTitleForPage('NKAlertSheet', 'nkalertsheet.html')">NKAlertSheet</a></li>
+</ul>
+
+<h2>Controls</h2>
+<ul>
+<li>NKSwitch</li>
+<li>NKSystemVolumeControl</li>
+<li>NKProgressBar</li>
+<li>NKSlider</li>
+</ul>
+
+<h2>More Stuff</h2>
+<ul>
+<li>Stuff</li>
+<li>Blah</li>
+<li>Something</li>
+<li>Another</li>
+</ul>
+
+
+</body>
+</html>

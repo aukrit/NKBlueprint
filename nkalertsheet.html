@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+
+
+
+// Show NKAlert ----------------------------------------------
+// This function, when called will show a NKAlert
+function showAlert()
+{
+	NKAlert("Alert Title", "Your message goes here");
+}
+</script>
+
+<div class="infobox">
+<h1>NKAlertSheet</h1>
+<h2>Description</h2>
+<p>This class is used to confirm user destructive actions or provide a choice between different actions.</p>
+<h2>Usage</h2>
+<p>
+</p>
+<h2>Example</h2>
+<p class="code">
+var sheet = new NKAlertSheet(); <br>
+sheet.init("actionSheetButtonPressed"); <br>
+sheet.addButtonWithTitle("ok"); <br>
+sheet.addButtonWithTitle("no way"); <br>
+sheet.addButtonWithTitle("I don't know"); <br>
+sheet.setStyle("black"); <br>
+sheet.setTitle("Make your choice"); <br>
+sheet.show();<br></p>
+<p>The above line of code works as follows:<br/>
+TODO: explanation here </p>
+</div>
+
+<div class="greybutton" onClick="showAlert();">Show NKAlertSheet</div>
+
+</body>
+</html>

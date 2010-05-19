@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* NKBlueprintAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NKBlueprintAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1E3B1960119AB45C00AB5181 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B195F119AB45C00AB5181 /* readme.txt */; };
+		1E3B198B119AEA3000AB5181 /* nkalert.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B198A119AEA3000AB5181 /* nkalert.html */; };
+		1E3B19D2119AF3E200AB5181 /* nkbpnavbarlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B19D1119AF3E200AB5181 /* nkbpnavbarlogo.png */; };
+		1E3B1A08119AF76500AB5181 /* nk_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B1A07119AF76500AB5181 /* nk_background.png */; };
+		1E692DA51199A6DE00D342C9 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 1E692DA41199A6DE00D342C9 /* style.css */; };
+		1E692E2D1199BA6A00D342C9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E692E2C1199BA6A00D342C9 /* Icon.png */; };
+		1E692E481199BC1200D342C9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E692E471199BC1200D342C9 /* Default.png */; };
+		1E692E531199BCE800D342C9 /* javascript.js in Resources */ = {isa = PBXBuildFile; fileRef = 1E692E521199BCE800D342C9 /* javascript.js */; };
+		1E8A542D11A3FF080071122E /* chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E8A542C11A3FF080071122E /* chevron.png */; };
+		1EE3168811A026D6004D6F9A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EE3168711A026D6004D6F9A /* about.html */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		BE44BC4E0FCADCA500A143AD /* libNimbleKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE44BC4D0FCADCA500A143AD /* libNimbleKit.a */; };
+		BE4B710610AC96A6004234DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4B710510AC96A6004234DA /* MapKit.framework */; };
+		BE4B711510AC96AD004234DA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4B711410AC96AD004234DA /* StoreKit.framework */; };
+		BE5A41AC11A4126200722733 /* nkalertsheet.html in Resources */ = {isa = PBXBuildFile; fileRef = BE5A41AB11A4126200722733 /* nkalertsheet.html */; };
+		BE9CDACC0FB8389700FFB649 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9CDACA0FB8389700FFB649 /* AVFoundation.framework */; };
+		BE9CDACD0FB8389700FFB649 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9CDACB0FB8389700FFB649 /* SystemConfiguration.framework */; };
+		BEAC17B00F98BE3600A76568 /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = BEAC17AF0F98BE3600A76568 /* main.html */; };
+		BEAC17B40F98BE5300A76568 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAC17B30F98BE5300A76568 /* AddressBook.framework */; };
+		BEAC17CA0F98BE7700A76568 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAC17C90F98BE7700A76568 /* CFNetwork.framework */; };
+		BEAC17CF0F98BE8D00A76568 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAC17CE0F98BE8D00A76568 /* AudioToolbox.framework */; };
+		BEAD72DC0FF0355D00C589B0 /* NKit.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BEAD72DB0FF0355D00C589B0 /* NKit.xcconfig */; };
+		BEAD72F20FF0358D00C589B0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAD72F10FF0358D00C589B0 /* MediaPlayer.framework */; };
+		BEE41E390FD98DBE00BFDBEF /* NKit.js in Resources */ = {isa = PBXBuildFile; fileRef = BEE41E380FD98DBE00BFDBEF /* NKit.js */; };
+		BEE41E530FD98DF500BFDBEF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE41E520FD98DF500BFDBEF /* CoreLocation.framework */; };
+		BEE41E550FD98DFE00BFDBEF /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE41E540FD98DFE00BFDBEF /* AddressBookUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* NKBlueprintAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKBlueprintAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* NKBlueprintAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKBlueprintAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* NKBlueprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKBlueprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1E3B195F119AB45C00AB5181 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		1E3B198A119AEA3000AB5181 /* nkalert.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkalert.html; sourceTree = "<group>"; };
+		1E3B19D1119AF3E200AB5181 /* nkbpnavbarlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nkbpnavbarlogo.png; sourceTree = "<group>"; };
+		1E3B1A07119AF76500AB5181 /* nk_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nk_background.png; sourceTree = "<group>"; };
+		1E692DA41199A6DE00D342C9 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		1E692E2C1199BA6A00D342C9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1E692E471199BC1200D342C9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1E692E521199BCE800D342C9 /* javascript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = javascript.js; sourceTree = "<group>"; };
+		1E8A542C11A3FF080071122E /* chevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chevron.png; sourceTree = "<group>"; };
+		1EE3168711A026D6004D6F9A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* NKBlueprint_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKBlueprint_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* NKBlueprint-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NKBlueprint-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		BE44BC4D0FCADCA500A143AD /* libNimbleKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNimbleKit.a; path = /Library/Frameworks/libNimbleKit.a; sourceTree = "<absolute>"; };
+		BE4B710510AC96A6004234DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BE4B711410AC96AD004234DA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BE5A41AB11A4126200722733 /* nkalertsheet.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkalertsheet.html; sourceTree = "<group>"; };
+		BE828A2110BD3648001976AB /* NKBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKBridge.h; sourceTree = "<group>"; };
+		BE9CDACA0FB8389700FFB649 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BE9CDACB0FB8389700FFB649 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BEAC17A00F98BE2000A76568 /* Nimble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nimble.h; sourceTree = "<group>"; };
+		BEAC17AF0F98BE3600A76568 /* main.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = main.html; sourceTree = "<group>"; };
+		BEAC17B30F98BE5300A76568 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
+		BEAC17C90F98BE7700A76568 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BEAC17CE0F98BE8D00A76568 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BEAD72DB0FF0355D00C589B0 /* NKit.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = NKit.xcconfig; path = /Library/Frameworks/NKit.xcconfig; sourceTree = "<absolute>"; };
+		BEAD72F10FF0358D00C589B0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BEE41E380FD98DBE00BFDBEF /* NKit.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = NKit.js; path = /Library/Frameworks/NKit.js; sourceTree = "<absolute>"; };
+		BEE41E520FD98DF500BFDBEF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BEE41E540FD98DFE00BFDBEF /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				BEAC17B40F98BE5300A76568 /* AddressBook.framework in Frameworks */,
+				BEAC17CA0F98BE7700A76568 /* CFNetwork.framework in Frameworks */,
+				BEAC17CF0F98BE8D00A76568 /* AudioToolbox.framework in Frameworks */,
+				BE9CDACC0FB8389700FFB649 /* AVFoundation.framework in Frameworks */,
+				BE9CDACD0FB8389700FFB649 /* SystemConfiguration.framework in Frameworks */,
+				BE44BC4E0FCADCA500A143AD /* libNimbleKit.a in Frameworks */,
+				BEE41E530FD98DF500BFDBEF /* CoreLocation.framework in Frameworks */,
+				BEE41E550FD98DFE00BFDBEF /* AddressBookUI.framework in Frameworks */,
+				BEAD72F20FF0358D00C589B0 /* MediaPlayer.framework in Frameworks */,
+				BE4B710610AC96A6004234DA /* MapKit.framework in Frameworks */,
+				BE4B711510AC96AD004234DA /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* NKBlueprintAppDelegate.h */,
+				1D3623250D0F684500981E51 /* NKBlueprintAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* NKBlueprint.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E3B19CE119AF3D400AB5181 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1E3B19D1119AF3E200AB5181 /* nkbpnavbarlogo.png */,
+				1E8A542C11A3FF080071122E /* chevron.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		1E692E4D1199BCDB00D342C9 /* Javascript */ = {
+			isa = PBXGroup;
+			children = (
+				1E692E521199BCE800D342C9 /* javascript.js */,
+			);
+			name = Javascript;
+			sourceTree = "<group>";
+		};
+		1E692E561199BD0B00D342C9 /* Css */ = {
+			isa = PBXGroup;
+			children = (
+				1E692DA41199A6DE00D342C9 /* style.css */,
+			);
+			name = Css;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1E3B195F119AB45C00AB5181 /* readme.txt */,
+				1E3B1A07119AF76500AB5181 /* nk_background.png */,
+				1E692E471199BC1200D342C9 /* Default.png */,
+				1E692E2C1199BA6A00D342C9 /* Icon.png */,
+				1E3B19CE119AF3D400AB5181 /* Images */,
+				BEAC17B20F98BE3900A76568 /* HTML */,
+				1E692E561199BD0B00D342C9 /* Css */,
+				1E692E4D1199BCDB00D342C9 /* Javascript */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BEAD72DB0FF0355D00C589B0 /* NKit.xcconfig */,
+				BEE41E380FD98DBE00BFDBEF /* NKit.js */,
+				BEAC17A00F98BE2000A76568 /* Nimble.h */,
+				BE828A2110BD3648001976AB /* NKBridge.h */,
+				32CA4F630368D1EE00C91783 /* NKBlueprint_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* NKBlueprint-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE4B711410AC96AD004234DA /* StoreKit.framework */,
+				BE4B710510AC96A6004234DA /* MapKit.framework */,
+				BE44BC4D0FCADCA500A143AD /* libNimbleKit.a */,
+				BEAC17B30F98BE5300A76568 /* AddressBook.framework */,
+				BEAD72F10FF0358D00C589B0 /* MediaPlayer.framework */,
+				BEE41E540FD98DFE00BFDBEF /* AddressBookUI.framework */,
+				BEE41E520FD98DF500BFDBEF /* CoreLocation.framework */,
+				BE9CDACA0FB8389700FFB649 /* AVFoundation.framework */,
+				BE9CDACB0FB8389700FFB649 /* SystemConfiguration.framework */,
+				BEAC17CE0F98BE8D00A76568 /* AudioToolbox.framework */,
+				BEAC17C90F98BE7700A76568 /* CFNetwork.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEAC17B20F98BE3900A76568 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				BEAC17AF0F98BE3600A76568 /* main.html */,
+				BE5A41AB11A4126200722733 /* nkalertsheet.html */,
+				1EE3168711A026D6004D6F9A /* about.html */,
+				1E3B198A119AEA3000AB5181 /* nkalert.html */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* NKBlueprint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "NKBlueprint" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NKBlueprint;
+			productName = NKBlueprint;
+			productReference = 1D6058910D05DD3D006BFB54 /* NKBlueprint.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NKBlueprint" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* NKBlueprint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE41E390FD98DBE00BFDBEF /* NKit.js in Resources */,
+				1E692E531199BCE800D342C9 /* javascript.js in Resources */,
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				BEAC17B00F98BE3600A76568 /* main.html in Resources */,
+				BEAD72DC0FF0355D00C589B0 /* NKit.xcconfig in Resources */,
+				1E692DA51199A6DE00D342C9 /* style.css in Resources */,
+				1E692E2D1199BA6A00D342C9 /* Icon.png in Resources */,
+				1E692E481199BC1200D342C9 /* Default.png in Resources */,
+				1E3B1960119AB45C00AB5181 /* readme.txt in Resources */,
+				1E3B198B119AEA3000AB5181 /* nkalert.html in Resources */,
+				1E3B19D2119AF3E200AB5181 /* nkbpnavbarlogo.png in Resources */,
+				1E3B1A08119AF76500AB5181 /* nk_background.png in Resources */,
+				1EE3168811A026D6004D6F9A /* about.html in Resources */,
+				1E8A542D11A3FF080071122E /* chevron.png in Resources */,
+				BE5A41AC11A4126200722733 /* nkalertsheet.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* NKBlueprintAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEAD72DB0FF0355D00C589B0 /* NKit.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NKBlueprint_Prefix.pch;
+				INFOPLIST_FILE = "NKBlueprint-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Frameworks\"",
+				);
+				PRODUCT_NAME = NKBlueprint;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEAD72DB0FF0355D00C589B0 /* NKit.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NKBlueprint_Prefix.pch;
+				INFOPLIST_FILE = "NKBlueprint-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Frameworks\"",
+				);
+				PRODUCT_NAME = NKBlueprint;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "NKBlueprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NKBlueprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
