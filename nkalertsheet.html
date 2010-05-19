@@ -15,12 +15,25 @@
 
 // Show NKAlert ----------------------------------------------
 // This function, when called will show a NKAlert
+
+function actionSheetButtonPressed(index)
+{
+}
+
 function showAlert()
 {
-	NKAlert("Alert Title", "Your message goes here");
+	var sheet = new NKAlertSheet();
+	sheet.init("actionSheetButtonPressed");
+	sheet.addButtonWithTitle("Sure!");
+	sheet.addButtonWithTitle("So-so");
+	sheet.addButtonWithTitle("Nah");
+	sheet.setRedButtonIndex(2);
+	sheet.setStyle("black");
+	sheet.setTitle("Do you like it?");
+	sheet.show();
 }
 </script>
-
+<div class="greybutton" onClick="showAlert();">Show NKAlertSheet</div>
 <div class="infobox">
 <h1>NKAlertSheet</h1>
 <h2>Description</h2>
@@ -30,19 +43,21 @@ function showAlert()
 </p>
 <h2>Example</h2>
 <p class="code">
-var sheet = new NKAlertSheet(); <br>
-sheet.init("actionSheetButtonPressed"); <br>
-sheet.addButtonWithTitle("ok"); <br>
-sheet.addButtonWithTitle("no way"); <br>
-sheet.addButtonWithTitle("I don't know"); <br>
-sheet.setStyle("black"); <br>
-sheet.setTitle("Make your choice"); <br>
-sheet.show();<br></p>
+	var sheet = new NKAlertSheet();<br>
+	sheet.init("actionSheetButtonPressed");<br>
+	sheet.addButtonWithTitle("Sure!");<br>
+	sheet.addButtonWithTitle("So-so");<br>
+	sheet.addButtonWithTitle("Nah");<br>
+	sheet.setRedButtonIndex(2);<br>
+	sheet.setStyle("black");<br>
+	sheet.setTitle("Do you like it?");<br>
+	sheet.show();<br>
+</p>
 <p>The above line of code works as follows:<br/>
-TODO: explanation here </p>
+<a href="#" onclick="showAlert()">Press this too see</a></p>
 </div>
 
-<div class="greybutton" onClick="showAlert();">Show NKAlertSheet</div>
+
 
 </body>
 </html>
