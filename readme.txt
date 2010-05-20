@@ -1,5 +1,5 @@
 ---------------------------------------------------------
-NK BLUEPRINT READ ME
+NK BLUEPRINT READ ME.txt
 ---------------------------------------------------------
 
 NK Blueprint is a community project, driven by users on the NimbleKit forum:
