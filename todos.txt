@@ -1,0 +1,65 @@
+---------------------------------------------------------
+NK BLUEPRINT TODO's
+---------------------------------------------------------
+********************************************
+* TO BE DONE
+********************************************
+
+NKTabBarController
+NKNavigationController
+NKInternetPlayer
+NKApplication
+NKSlider
+NKButton
+NKToolBar
+NKTextView
+NKTextField
+NKLabel
+NKModalWindow
+NKImageView
+NKSwitch
+NKProgressBar
+NKActivityIndicator
+NKContact
+NKAudioPlayer
+NKVideoPlayer
+NKSystemVolumeControl
+NKFile
+NKSettings
+NKFileDownloader
+NKSQLite
+NKAppStore
+NKPasteboard
+NKImage
+NKMailComposer
+
+Photo library/camera support
+
+Orientation support
+
+Application Events
+
+Nimble Kit functions
+• NKGetUniqueIdentifier
+• NKGetDeviceType
+• NKIsInternetAvailableViaCellularNetwork
+• NKIsInternetAvailableViaWifi
+• NKMoveToPageAnimated
+• NKOpenURLInSafari
+• NKStartPreloadingPage
+• NKReloadPage
+• NKGetLibraryVersion
+• NKGetParameter
+• NKLog
+• NKConfirm
+• NKExecuteJavascriptOnPage
+• NKNativeControlRotate
+
+********************************************
+* DONE
+********************************************
+
+NKAlertSheet
+NKAlert
+NKMapView
+NKSetWebViewBackgroundColor (mentioned in "about.html")
