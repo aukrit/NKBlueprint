@@ -13,14 +13,14 @@
 
 
 
-// Show NKAlert ----------------------------------------------
-// This function, when called will show a NKAlert
+// Show an NKAlertSheet ----------------------------------------------
+// This function, when called will show a NKAlertSheet
 
 function actionSheetButtonPressed(index)
 {
 }
 
-function showAlert()
+function showAlertsheet()
 {
 	var sheet = new NKAlertSheet();
 	sheet.init("actionSheetButtonPressed");
@@ -33,7 +33,7 @@ function showAlert()
 	sheet.show();
 }
 </script>
-<div class="greybutton" onClick="showAlert();">Show NKAlertSheet</div>
+<div class="greybutton" onClick="showAlertsheet();">Show NKAlertSheet</div>
 <div class="infobox">
 <h1>NKAlertSheet</h1>
 <h2>Description</h2>
@@ -54,7 +54,7 @@ function showAlert()
 	sheet.show();<br>
 </p>
 <p>The above line of code works as follows:<br/>
-<a href="#" onclick="showAlert()">Press this too see</a></p>
+<a href="#" onclick="showAlertsheet()">Press this to see</a></p>
 </div>
 
 

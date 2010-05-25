@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+// .js For Page ----------------------------------------------
+
+</script>
+
+<div class="greybutton" OnClick="NKMoveToPageAnimated('nkmapview_example.html', 'flipRight')">View MapView Example</div>
+
+
+<div class="infobox">
+<h1>NK MapView</h1>
+<h2>Description</h2>
+<p>NKMapView shows a UIMapView with given width, height and coordinates over the top of a webview.</p>
+<h2>Usage</h2>
+<p>Call with init(x,y,width,height) &amp; use show() &amp; hide() to show and hide.</p>
+<h2>Example</h2>
+<p class="code">
+	var map = new NKMapView();<br/>
+	map.setMapType("hybrid");<br/>
+	map.init(0, 0, 320, 460);<br/>
+	map.showUserLocation("YES");<br/>
+	map.setDisplayRegion(50.818631, -0.121940, 0.05, 0.05);<br/>
+	map.addAnnotation(50.818631, -0.121940, "Annotation Title", "Annotation Blurb");<br/>
+	map.show();</p>
+<p>See the code for more detail.</p>
+</div>
+
+
+</body>
+</html>

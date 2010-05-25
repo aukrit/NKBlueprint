@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+<script type="text/javascript">
+
+// Show The Map ==================================================
+function showMap() {
+   var map = new NKMapView();
+   map.setMapType("hybrid");		// What sort of map do you want - "standard", "satellite" or "hybrid"?
+   map.init(0, 0, 320, 372);		// Define map's dimensions
+   map.showUserLocation("YES");		// Show users location on map (YES or NO)
+   map.setDisplayRegion(50.818631, -0.121940, 0.05, 0.05);	// Sets the map area to display
+   map.addAnnotation(50.818631, -0.121940, "Annotation Title", "Annotation desc./info goes here.", "annoicon.png"); // Adds Annotation to map
+   map.show();						// Makes the map visible
+}
+
+// A Toolbar for various functions ===============================
+function showToolbar() {
+var toolbar = new NKToolBar();
+toolbar.init(372);					// Toolbar shown 372px
+toolbar.setStyle("black");			// Toolbar Style
+toolbar.addButton("Back to Docs.", "", "goMapdoc()");
+// ADD SOME MORE EXAMPLE'S HERE **********************************
+//toolbar.addFlexibleSpace();
+//toolbar.addButton("Button", "", "");
+//toolbar.addFlexibleSpace();
+//toolbar.addButton("Button", "", "");
+//toolbar.addFlexibleSpace();
+//toolbar.addButton("Button", "", "");
+toolbar.show();
+}
+
+// goMapdoc - Flips Left, back to nkmapview.html ================
+function goMapdoc() 
+{
+NKMoveToPageAnimated("nkmapview.html", "flipleft"); // Go to nkmapview.html, with a "flip left" transition
+}
+
+</script>
+
+</head>
+
+<body onLoad="showToolbar(); showMap()"> <!-- Show map when page has loaded -->
+
+</body>
+</html>
