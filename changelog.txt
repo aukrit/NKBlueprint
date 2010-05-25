@@ -1,4 +1,7 @@
 ---------------------------------------------------------
-NKBLUEPRINT CHANGELOG
+NK BLUEPRINT CHANGELOG
 ---------------------------------------------------------
 Added project to SVN
+
+25/05/2010
+Added NKMapKit example pages & associated files
