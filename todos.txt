@@ -7,15 +7,12 @@ NK BLUEPRINT TODO's
 
 NKTabBarController
 NKNavigationController
-NKInternetPlayer
 NKApplication
 NKSlider
 NKButton
-NKToolBar
 NKTextView
 NKTextField
 NKLabel
-NKModalWindow
 NKImageView
 NKSwitch
 NKProgressBar
@@ -31,7 +28,6 @@ NKSQLite
 NKAppStore
 NKPasteboard
 NKImage
-NKMailComposer
 
 Photo library/camera support
 
@@ -63,3 +59,11 @@ NKAlertSheet
 NKAlert
 NKMapView
 NKSetWebViewBackgroundColor (mentioned in "about.html")
+
+********************************************
+* IN PROGRESS / CLAIMED
+********************************************
+NKInternetPlayer
+NKModalWindow
+NKToolBar
+NKMailComposer
