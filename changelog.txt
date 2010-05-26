@@ -5,3 +5,6 @@ Added project to SVN
 
 25/05/2010
 Added NKMapKit example pages & associated files
+
+26/05/2010
+Added NKMailComposer
