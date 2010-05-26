@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+// Modal Example 1 ==========================================================
+function showModal1()
+{
+modal = new NKModalWindow();
+modal.setAlpha(0.8)								// Sets alpha (opacity) to 0.8
+modal.setFrame(0,0,320,480)						// Set Frame to cover whole screen
+modal.show();									// Show the modal window
+
+var indicator = new NKActivityIndicator();
+indicator.init(150, 165, 20, "white");			// Set up a spinning indicator
+indicator.show();								// Show spinner
+indicator.spin();								// Make it spin
+modal.addControl(indicator);					// Add spinner to modal
+
+var label = new NKLabel();
+label.init(110, 110, 140, 25, "Doing Stuff...");// Set up a NKLabel to display text
+label.setTextColor(255, 255, 255)				// Set Text Color
+modal.addControl(label);						// Add the label to the modal
+label.show();									// Show the label
+
+var button = new NKButton();
+button.init(90, 280, 150, 24, "modal.dismiss()");// Button to dismiss modal
+button.setTitle("Cancel");						// Button Text
+modal.addControl(button);						// Add button to modal
+button.show();									// Show the button
+}
+
+// Modal Example 2 ==========================================================
+function showModal2()
+{
+modal = new NKModalWindow();
+modal.setAlpha(0)								// 0 Opacity - we're only using the image for shape here
+modal.setFrame(0,0,320,480)						// Frame covers whole screen, but is transparant
+modal.show();
+
+var imagebg = new NKImageView();				// Using an NKImageView to implement the BG Image
+imagebg.init(30, 60, 263, 256, "modalbg.png");	// Define the image we're using
+imagebg.show();									// Show the image
+
+var indicator = new NKActivityIndicator();
+indicator.init(150, 230, 20, "white");
+indicator.show();
+indicator.spin();
+modal.addControl(indicator);
+
+var label = new NKLabel();
+label.init(110, 160, 140, 25, "Smaller Modal");
+label.setTextColor(255, 255, 255)
+modal.addControl(label);
+label.show();
+
+var button = new NKButton();
+button.init(90, 310, 150, 50, "hideModal()");	// modal.dismiss();
+button.setTitle("Dismiss Modal");
+modal.addControl(button);
+button.show();
+}
+
+function hideModal() 
+{
+//NKAlert("Title", "Message");
+modal.dismiss();
+imagebg.hide(); // Grr, this isn't working...........
+}
+</script>
+
+<div class="greybutton" onClick="showModal1();">Show Example 1</div>
+<div class="greybutton" onClick="showModal2();">Show Example 2</div>
+
+
+<div class="infobox">
+<h1>NKModalWindow</h1>
+<h2>Description</h2>
+<p>This class is used to present modal dialogs and "wait screens" when the user should not access any other controls except those placed on the modal window</p>
+<h2>Usage</h2>
+<p><b>show()</b><br />shows modal window on top of all controls.</p>
+<p><b>dismiss()</b><br />removes modal window from the screen.</p>
+<p><b>addControl()</b><br />adds control to the modal window, can take value of standard NimbleKit controls, like NKActivityIndicator, NKButton, NKLabel, etc.<br />
+<p><b>setAlpha(val)</b><br />sets the opacity of the modal window.</p>
+<p><b>setFrame(x,y,w,h)</b><br />defines the frame size and positioning of the modal window.</p>
+</div>
+
+
+</body>
+</html>
