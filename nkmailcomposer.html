@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+// Show Mail Composer Function ======================================
+var image = new NKImage();
+loadFromBundle(icon.png);
+
+function showComposer() 
+{ 
+var composer = new NKMailComposer();
+composer.setRecipient("someone@somewhere.com");			// Add a recipient, can be left blank for user to fill
+composer.setSubject("The NK Blueprint App Rocks!");		// Add a subject for the email, can be left blank for user to fill
+composer.setBody('<p><em>This email was sent from the </em> &ldquo;NK Blueprint&rdquo; <em>app</em>.</p><p><a href="http://www.nimblekit.com/" />NimbleKit Website</a></p>', "1"); // Set Email body & include some html & an image - the "1" lets the composer know it's an HTML email
+image1 = new NKImage();									// Set up our image to use
+image1.loadFromBundle("icon.png");						// Load "icon.png" from the app bundle
+composer.addImage(image1);								// Add the image to the email
+composer.show();										// Shows the composer
+}
+</script>
+
+<div class="greybutton" onClick="showComposer();">Show Mail Composer</div>
+
+
+<div class="infobox">
+<h1>NKMailComposer</h1>
+<h2>Description</h2>
+<p>NKMailComposer is used to send e-mail messages without leaving the application and with the option of having content, subject and recipient pre-filled.</p>
+<h2>Usage</h2>
+<p><b>show()</b><br />shows modal mail composer on top of application pages, call this after you already filled all fields you need (like subject, body or recipient).</p>
+<p><b>setSubject(subject)</b><br />sets mail composer subject.</p>
+<p><b>setRecipient(recipients)</b><br />sets recipients as e-mail addresses, can take many addresses at once divided by comma.<br />
+<p><b>setBody(body)</b><br />sets the body of the message.</p>
+<p><b>addImage(image)</b><br />adds image to composed e-mail, can be called multiple times to add many pictures. Image parameter is an instance of a NKImage class.</p>
+<h2>Example</h2>
+<p class="code">function showComposer()<br />
+{<br />
+var composer = new NKMailComposer();<br />
+composer.setRecipient("sunny@nimblekit.com, another@somewhere.com");<br />
+composer.setSubject("subject");<br />
+composer.setBody("message body!");<br />
+composer.show();<br />
+}</p>
+<p>When the function "showComposer" is called , the composer will show with the prefilled fields as defined in the code.</p>
+</div>
+
+
+</body>
+</html>
