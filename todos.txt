@@ -7,11 +7,6 @@ NK BLUEPRINT TODO's
 
 NKTabBarController
 NKNavigationController
-NKApplication
-NKSlider
-NKButton
-NKTextView
-NKTextField
 NKLabel
 NKImageView
 NKSwitch
@@ -24,7 +19,6 @@ NKSystemVolumeControl
 NKFile
 NKSettings
 NKFileDownloader
-NKSQLite
 NKAppStore
 NKPasteboard
 NKImage
@@ -64,7 +58,18 @@ NKSetWebViewBackgroundColor (mentioned in "about.html")
 * IN PROGRESS / CLAIMED
 ********************************************
 
+HalfMoon:
+---------------
 NKInternetPlayer
 NKModalWindow
 NKToolBar
 NKMailComposer
+
+Sunny:
+---------------
+NKApplication
+NKSlider
+NKButton
+NKTextView
+NKTextField
+NKSQLite
