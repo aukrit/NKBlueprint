@@ -232,8 +232,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -276,18 +274,17 @@
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
-								<string>E2644B35053B69B200211256</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>20</integer>
+									<integer>17</integer>
 									<integer>12</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {186, 1045}}</string>
+							<string>{{0, 0}, {186, 1043}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -299,14 +296,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {203, 1063}}</string>
+						<string>{{0, 0}, {203, 1061}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>371 67 1508 1104 0 0 1920 1178 </string>
+						<string>456 76 1389 1102 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -317,12 +314,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>nkmodalwindow.html</string>
+								<string>nkinternetplayer.html</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,18 +329,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>nkmodalwindow.html</string>
+										<string>nkinternetplayer.html</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1E70DC5D11AD7E24003F1019</string>
+										<string>1E2ECDC411B0094500045AAC</string>
 										<key>history</key>
 										<array>
 											<string>1E692E3C1199BB9700D342C9</string>
 											<string>1E692E3D1199BB9700D342C9</string>
 											<string>1E3B195A119AB09400AB5181</string>
 											<string>1E3B1982119AE5D400AB5181</string>
-											<string>1EE3168B11A02715004D6F9A</string>
 											<string>1E8A54AB11A408BA0071122E</string>
 											<string>1E8A54AC11A408BA0071122E</string>
 											<string>1E8A54AD11A408BA0071122E</string>
@@ -349,20 +347,23 @@
 											<string>1E8A54AF11A408BA0071122E</string>
 											<string>1E5E71DE11AC288200CD5342</string>
 											<string>1E5E71E011AC288200CD5342</string>
-											<string>1E5E71E311AC288200CD5342</string>
 											<string>1EC8CBDA11AC29A400A07E57</string>
-											<string>1ECD744111AC3E1900889118</string>
-											<string>1ECD745211AC46EE00889118</string>
 											<string>1ECD745411AC46EE00889118</string>
-											<string>1E9CD19911AD398D008CE378</string>
-											<string>1E70DC5511AD7E24003F1019</string>
-											<string>1E70DC5611AD7E24003F1019</string>
-											<string>1E70DC5711AD7E24003F1019</string>
-											<string>1E70DC5811AD7E24003F1019</string>
-											<string>1E70DC5911AD7E24003F1019</string>
-											<string>1E70DC5A11AD7E24003F1019</string>
-											<string>1E70DC5B11AD7E24003F1019</string>
-											<string>1E70DC5C11AD7E24003F1019</string>
+											<string>1E1C351E11AE779000131A9C</string>
+											<string>1E1C35BA11AE7FCE00131A9C</string>
+											<string>1E1C35DD11AE89E800131A9C</string>
+											<string>1E1C35DE11AE89E800131A9C</string>
+											<string>1E1C35DF11AE89E800131A9C</string>
+											<string>1E1C35E011AE89E800131A9C</string>
+											<string>1E1C35E111AE89E800131A9C</string>
+											<string>1E1C360C11AEA82900131A9C</string>
+											<string>1E1C36EB11AEB70400131A9C</string>
+											<string>1E1C381211AEE31300131A9C</string>
+											<string>1E2ECD7E11AFDC1300045AAC</string>
+											<string>1E2ECD7F11AFDC1300045AAC</string>
+											<string>1E2ECD9711AFDDFD00045AAC</string>
+											<string>1E2ECDC311B0094500045AAC</string>
+											<string>1E2ECDA511AFFE8600045AAC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -374,14 +375,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1300, 917}}</string>
+								<string>{{0, 0}, {1181, 900}}</string>
 								<key>RubberWindowFrame</key>
-								<string>371 67 1508 1104 0 0 1920 1178 </string>
+								<string>456 76 1389 1102 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>917pt</string>
+							<string>900pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -394,18 +395,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 922}, {1300, 141}}</string>
+								<string>{{0, 905}, {1181, 156}}</string>
 								<key>RubberWindowFrame</key>
-								<string>371 67 1508 1104 0 0 1920 1178 </string>
+								<string>456 76 1389 1102 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>141pt</string>
+							<string>156pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1300pt</string>
+					<string>1181pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -420,9 +421,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1E70DBAA11AD6090003F1019</string>
+				<string>1E2ECD3511AFCF4300045AAC</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1E70DBAB11AD6090003F1019</string>
+				<string>1E2ECD3611AFCF4300045AAC</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -566,7 +567,7 @@
 		<string>/Users/mikeseaby/AppCode/NK Blueprint/NKBlueprint.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>371 67 1508 1104 0 0 1920 1178 </string>
+	<string>456 76 1389 1102 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -643,7 +644,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1E692D9F11999BDD00D342C9</string>
-				<string>1E70DBAC11AD6090003F1019</string>
+				<string>1E2ECD3711AFCF4300045AAC</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -765,13 +766,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>1E70DC5E11AD7E24003F1019</string>
+				<string>1E2ECD3811AFCF4300045AAC</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>1E70DC5F11AD7E24003F1019</string>
-				<string>1E70DC6011AD7E24003F1019</string>
-				<string>1E70DC6111AD7E24003F1019</string>
-				<string>1E70DC6211AD7E24003F1019</string>
-				<string>1E70DC6311AD7E24003F1019</string>
+				<string>1E2ECD3911AFCF4300045AAC</string>
+				<string>1E2ECD3A11AFCF4300045AAC</string>
+				<string>1E2ECD3B11AFCF4300045AAC</string>
+				<string>1E2ECD3C11AFCF4300045AAC</string>
+				<string>1E2ECD3D11AFCF4300045AAC</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -933,7 +934,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>1E70DC6411AD7E24003F1019</string>
+				<string>1E2ECD3E11AFCF4300045AAC</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

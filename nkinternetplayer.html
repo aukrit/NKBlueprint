@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+
+<div class="greybutton" OnClick="NKMoveToPageAnimated('nkinternetplayer_example.html', 'flipRight')">View Radio Example</div>
+
+<div class="infobox">
+<h1>NK InternetPlayer</h1>
+<h2>Description</h2>
+<p>NKInternetPlayer allows you to played streamed media. MP3 and AAC streams supported.</p>
+<h2>Usage</h2>
+<p></p>
+<h2>Example</h2>
+<p class="code">
+	function playRadio() {<br/>
+	var radio = new NKInternetPlayer();<br/>
+	radio.notifyPlayingStarted("stopSpin");<br/>
+	radio.forceDecoderFormat("aac");<br/>
+	radio.playFromURL("http://radio.com:8080");<br/>
+	} <br/>
+	function stopRadio() {<br/>
+	var radio = new NKInternetPlayer();
+	<br/>radio.stop();<br/>
+	}</p>
+<p>See the example source code for a more detailed implementation.</p>
+</div>
+
+
+</body>
+</html>

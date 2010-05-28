@@ -53,6 +53,7 @@ NKAlertSheet
 NKAlert
 NKMapView
 NKSetWebViewBackgroundColor (mentioned in "about.html")
+NKMailComposer
 
 ********************************************
 * IN PROGRESS / CLAIMED
@@ -63,7 +64,6 @@ HalfMoon:
 NKInternetPlayer
 NKModalWindow
 NKToolBar
-NKMailComposer
 
 Sunny:
 ---------------
