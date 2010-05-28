@@ -29,6 +29,9 @@
 		1E70DC0F11AD6FFA003F1019 /* modalbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E70DC0E11AD6FFA003F1019 /* modalbg.png */; };
 		1E8A542D11A3FF080071122E /* chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E8A542C11A3FF080071122E /* chevron.png */; };
 		1E9CD17411AD2F9B008CE378 /* nkmailcomposer.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E9CD17311AD2F9B008CE378 /* nkmailcomposer.html */; };
+		1EBF531411B00ED60076D2E1 /* nktoolbar_example.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF531211B00ED60076D2E1 /* nktoolbar_example.html */; };
+		1EBF531511B00ED60076D2E1 /* nktoolbar.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF531311B00ED60076D2E1 /* nktoolbar.html */; };
+		1EBF537011B01BC80076D2E1 /* camera32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF536F11B01BC80076D2E1 /* camera32.png */; };
 		1ECD744711AC3E8600889118 /* todos.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1ECD744611AC3E8600889118 /* todos.txt */; };
 		1EE3168811A026D6004D6F9A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EE3168711A026D6004D6F9A /* about.html */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -75,6 +78,9 @@
 		1E70DC0E11AD6FFA003F1019 /* modalbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modalbg.png; sourceTree = "<group>"; };
 		1E8A542C11A3FF080071122E /* chevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chevron.png; sourceTree = "<group>"; };
 		1E9CD17311AD2F9B008CE378 /* nkmailcomposer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkmailcomposer.html; sourceTree = "<group>"; };
+		1EBF531211B00ED60076D2E1 /* nktoolbar_example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nktoolbar_example.html; sourceTree = "<group>"; };
+		1EBF531311B00ED60076D2E1 /* nktoolbar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nktoolbar.html; sourceTree = "<group>"; };
+		1EBF536F11B01BC80076D2E1 /* camera32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera32.png; sourceTree = "<group>"; };
 		1ECD744611AC3E8600889118 /* todos.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todos.txt; sourceTree = "<group>"; };
 		1EE3168711A026D6004D6F9A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				1E5E718B11AC22B800CD5342 /* annoicon.png */,
+				1EBF536F11B01BC80076D2E1 /* camera32.png */,
 				1E3B19D1119AF3E200AB5181 /* nkbpnavbarlogo.png */,
 				1E70DC0E11AD6FFA003F1019 /* modalbg.png */,
 				1E8A542C11A3FF080071122E /* chevron.png */,
@@ -249,6 +256,8 @@
 				1E5E70AE11ABE2D500CD5342 /* nkmapview.html */,
 				1E5E70B011ABE31B00CD5342 /* nkmapview_example.html */,
 				1E70DBAD11AD60C1003F1019 /* nkmodalwindow.html */,
+				1EBF531311B00ED60076D2E1 /* nktoolbar.html */,
+				1EBF531211B00ED60076D2E1 /* nktoolbar_example.html */,
 				1E5E70A811ABE13A00CD5342 /* template.html */,
 			);
 			name = HTML;
@@ -322,6 +331,9 @@
 				1E70DC0F11AD6FFA003F1019 /* modalbg.png in Resources */,
 				1E1C35C311AE851200131A9C /* nkinternetplayer.html in Resources */,
 				1E2ECD7C11AFDB9A00045AAC /* nkinternetplayer_example.html in Resources */,
+				1EBF531411B00ED60076D2E1 /* nktoolbar_example.html in Resources */,
+				1EBF531511B00ED60076D2E1 /* nktoolbar.html in Resources */,
+				1EBF537011B01BC80076D2E1 /* camera32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

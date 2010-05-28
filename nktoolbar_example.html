@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+<style type="text/css">
+html, body	{
+	background: url('nk_background.png');
+}
+</style>
+</head>
+
+<body>
+
+<script type="text/javascript">
+// Create a toolbar at top of screen =============================
+var toolBarTop = new NKToolBar();
+toolBarTop.init(1);
+toolBarTop.addButton("Info", "", "toolbartopInfo");
+toolBarTop.addFlexibleSpace();
+toolBarTop.addButton("A Button", "", "toolbartopPressed");
+toolBarTop.addFlexibleSpace();
+toolBarTop.addDoneButton("Done", "toolbartopDone");
+toolBarTop.setStyle("blacktranslucent");
+toolBarTop.show();
+// Functions for top toolbar -------------------------------------
+function toolbartopInfo() {NKAlert("Black Translucent Toolbar", "Equally spaced with 2 flexible dividers between buttons ");}
+function toolbartopPressed() {NKAlert("Info", "Top Toolbar Middle Button Pressed");}
+function toolbartopDone() {NKAlert("Done Button", "Top Toolbar Done Button - has Blue Color");}
+
+
+// Create a toolbar at middle of screen ===========================
+var toolBarMiddle = new NKToolBar();
+toolBarMiddle.init(185);
+toolBarMiddle.addButton("Info", "", "toolbarmidInfo");
+toolBarMiddle.addButton("Hide Top", "", "toolbarmidHide");
+toolBarMiddle.addButton("Show Top", "", "toolbarmidShow");
+toolBarMiddle.addDoneButton("Title", "toolbarmidAlt");
+toolBarMiddle.setStyle("black");
+toolBarMiddle.show();
+// Functions for middle toolbar -----------------------------------
+function toolbarmidInfo() {NKAlert("Black Toolbar", "No flexible spacers used, so buttons bunch up");}
+function toolbarmidHide() {toolBarTop.hide()}
+function toolbarmidShow() {toolBarTop.show()}
+function toolbarmidAlt() {NKAlert("Info", "Uses \"Done\" Button with different name");}
+
+
+// Create a toolbar at bottom of screen ===========================
+var toolBarBottom = new NKToolBar();
+toolBarBottom.init(373);
+toolBarBottom.addButton("Info", "", "toolbarbotInfo");
+toolBarBottom.addFlexibleSpace();
+toolBarBottom.addButton("", "camera32.png", "toolbarbotImage")
+toolBarBottom.addFlexibleSpace();
+toolBarBottom.addButton("Back To Overview", "", "goBack"); // ********** SEE NOTES BELOW REGARDING CRASH ISSUE ***********
+toolBarBottom.setStyle("default");
+toolBarBottom.show();
+// Functions for bottom toolbar ------------------------------------
+function toolbarbotInfo() {NKAlert("Default Toolbar", "Standard Blue Toolbar color");}
+function toolbarbotImage() {NKAlert("Image Button", "This button uses an image (camera32.png) instead of a title");}
+
+function goBack() {NKMoveToPageAnimated("nktoolbar.html", "flipleft");}
+
+</script>
+
+<!-- 
+***************************************************************
+* CRASH ISSUE...                                              *
+***************************************************************
+
+
+This line:
+---------------------------------------------------------------
+toolBarBottom.addButton("Back To Overview", "", "goBack");
+---------------------------------------------------------------
+
+works fine as is, but when changed to a "Done" button:
+
+---------------------------------------------------------------
+toolBarBottom.addDoneButton("Back To Overview", "", "goBack");
+---------------------------------------------------------------
+
+
+it crashes the app when called?
+-->
+
+
+
+
+</body>
+</html>
