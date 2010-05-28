@@ -22,11 +22,32 @@
 <h2>Description</h2>
 <p>Class is used as a utility toolbar.</p>
 <h2>Usage</h2>
-<p>eg: NKMoonOnStick("magic", "beans")</p>
+<p><b>init(y)</b><br />
+Initializes toolbar with vertical position 'y'<br />
+<b>show()</b><br />
+shows initialized toolbar<br />
+<b>hide()</b><br />
+hides initialized toolbar<br />
+<b>addButton(title, imageName, callback)</b><br />
+creates button on toolbar<br />
+<b>Parameters:</b><br />
+title - button title to be displayed (ignored if imageName specified) imageName - the filename of bundled image to be displayed on button (discards title) callback - javascript function name to be called when button pressed<br/>
+<b>insertButtonAtIndex(index, title, image, callback)</b><br />
+creates button on toolbar<br/>
+<b>Parameters:</b><br />
+index - index, used to specify button position, count starts from 1 title - button title to be displayed (ignored if imageName specified) imageName - the filename of bundled image to be displayed on button (discards title) callback - javascript function name to be called when button pressed
+<b>addDoneButton(title, callback)</b><br />
+creates blue button on toolbar, which has same style is used for “Done” buttons<br />
+<b>addFlexibleSpace()</b><br />
+adds flexible space into toolbar, used to align buttons<br />
+<b>setStyle(style)</b><br />
+sets the style of toolbar, possible values are: 'black', 'blacktranslucent', 'default'<br />
+<b>destroy()</b><br />
+removes and destroys toolbar and resources allocated for it.<br />
+<b>removeButtonAtIndex(index)</b><br />
+removed button at specified index (starts at 0)</p>
 <h2>Example</h2>
-<p class="code">&lt;a href="#" onClick="showMoonStick();"&gt;Show NKMoonOnStick&lt;/a&gt;</p>
-<p>When the link is clicked, blah blah blah</p>
-<p class="code">function showAlert()<br />{<br />NKAlert("Alert Title", "Your message goes here");<br />}</p>
+<p>See source code for multiple examples</p>
 </div>
 
 
