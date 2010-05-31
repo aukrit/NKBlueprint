@@ -73,3 +73,10 @@ NKButton
 NKTextView
 NKTextField
 NKSQLite
+
+Eviserator:
+---------------
+NKGetUniqueIdentifier
+NKGetDevice Type
+NKIsInternetAvailableViaCellularNetwork
+NKIsInternetAvailableViaWifi
