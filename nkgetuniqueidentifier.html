@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+// Show NKGetUniqueIdentifier ---------------------------------
+// This function, when called will show a NKGetUniqueIdentifier
+function showGUID()
+{
+	NKAlert("UNIQUE IDENTIFIER", NKGetUniqueIdentifier());
+}
+</script>
+
+<div class="greybutton" onClick="showGUID();">Show NKGetUniqueIdentifier</div>
+
+
+<div class="infobox">
+<h1>NKGetUnigueIdentifier</h1>
+<h2>Description</h2>
+<p>NKGetUniqueIdentifier returns the unique identifier of the device based on hardware serial number.</p>
+<h2>Usage</h2>
+<p>NKGetUniqueIdentifier()</p>
+<h2>Example</h2>
+<p class="code">&lt;a href="#" onClick="showGUID();"&gt;Show NKGetUniqueIdentifier&lt;/a&gt;</p>
+<p>When the link is clicked, the "showGUID" function is called &amp; the unique identifier of the device is displayed:</p>
+<p class="code">function showGUID()<br />{<br />NKAlert("Unique Identifier", NKGetUnigueIdentifier());<br />}</p>
+</div>
+
+
+</body>
+</html>
+

@@ -7,58 +7,58 @@
 <script type="text/javascript" src="javascript.js"></script>
 
 <style type="text/css">
-html, body	{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	color: #fff;
-	font-family: Arial Rounded MT Bold;
-	background: url('nk_background.png');
+html, body      {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: #fff;
+        font-family: Arial Rounded MT Bold;
+        background: url('nk_background.png');
 }
 
 
 #station {
-	padding: 10px;
-	margin: 10px;
-	color: #fff;
-	font-size: 10px;
-	-webkit-border-radius:10px;
-	text-shadow:1px 1px 0 #000;
-	background-color:#333;
+        padding: 10px;
+        margin: 10px;
+        color: #fff;
+        font-size: 10px;
+        -webkit-border-radius:10px;
+        text-shadow:1px 1px 0 #000;
+        background-color:#333;
 }
 
 #metadata {
-	padding: 10px;
-	margin: 10px;
-	height:135px;
-	font-size: 10px;
-	text-shadow:1px 1px 0 #000;
-	-webkit-border-radius:10px;
-	background-color:#333;
+        padding: 10px;
+        margin: 10px;
+        height:135px;
+        font-size: 10px;
+        text-shadow:1px 1px 0 #000;
+        -webkit-border-radius:10px;
+        background-color:#333;
 }
 
 .metadatatext {
-	font-size: 16px;
-	text-shadow:1px 1px 0 #000;
+        font-size: 16px;
+        text-shadow:1px 1px 0 #000;
 }
 
 #volumeIndicator {
-	padding: 5px 10px;
-	margin: 10px;
-	color: #fff;
-	font-size: 10px;
-	-webkit-border-radius:10px;
-	text-shadow:1px 1px 0 #000;
-	background-color:#333;
+        padding: 5px 10px;
+        margin: 10px;
+        color: #fff;
+        font-size: 10px;
+        -webkit-border-radius:10px;
+        text-shadow:1px 1px 0 #000;
+        background-color:#333;
 }
 
 #internetplayervolbox {
-	position:fixed;
-	left: 0px;
-	width:320px;
-	top: 374px;
-	height: 42px;
-	background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#525252), to(#525252), color-stop(.5,#000000));
+        position:fixed;
+        left: 0px;
+        width:320px;
+        top: 374px;
+        height: 42px;
+        background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#525252), to(#525252), color-stop(.5,#000000));
 }
 </style>
 </head>
@@ -69,10 +69,10 @@ html, body	{
 // Check for an active internet connection =========================
 if (NKIsInternetAvailableViaWifi() != "1")
 {
-	if (NKIsInternetAvailableViaCellularNetwork() != "1")
-	{
-		NKAlert("No Data Connection", "An active Internet Connection is required to play streaming radio.");
-	}
+        if (NKIsInternetAvailableViaCellularNetwork() != "1")
+        {
+                NKAlert("No Data Connection", "An active Internet Connection is required to play streaming radio.");
+        }
 }
 
 // Prevent Page Scroll ===========================================
@@ -86,113 +86,115 @@ indicator.init(150,150,30,"white");
 
 // Create a global instance of the internet player ===============
 var radio = new NKInternetPlayer();
-radio.notifyPlayingStarted("radioStartedToPlay"); 
-radio.notifyPlayingStopped("radioStoppedPlaying");
+//radio.notifyPlayingStarted("radioStartedToPlay"); 
+//radio.notifyPlayingStopped("radioStoppedPlaying");
 
 // Play Stations =================================================
 
 function playRadioProg()
 {
-	radio.notifyPlayingStopped("radioStoppedPlaying"); 
-	indicator.show();
-	indicator.spin();
-	radio.playFromURL("http://schizoid.in/schizoid-prog.pls"); // Progressive Stream
-	var container = document.getElementById("station");
-	container.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Progressive</span>";
+		radio.notifyPlayingStarted("radioStartedToPlay"); 
+        indicator.show();
+        indicator.spin();
+        radio.playFromURL("http://schizoid.in/schizoid-prog.pls"); // Progressive Stream
+        var container = document.getElementById("station");
+        container.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Progressive</span>";
 }
 
 function playRadioChill()
 {
-	radio.notifyPlayingStopped("radioStoppedPlaying"); 
-	indicator.show();
-	indicator.spin();
-	radio.playFromURL("http://schizoid.in/schizoid-chill.pls"); // Chillout  Stream
-	var container = document.getElementById("station");
-	container.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Chillout</span>";
+		radio.notifyPlayingStarted("radioStartedToPlay"); 
+        indicator.show();
+        indicator.spin();
+        radio.playFromURL("http://schizoid.in/schizoid-chill.pls"); // Chillout  Stream
+        var container = document.getElementById("station");
+        container.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Chillout</span>";
 }
 
 function playRadioPsy()
 {
-	radio.notifyPlayingStopped("radioStoppedPlaying");
-	indicator.show();
-	indicator.spin();
-	radio.playFromURL("http://schizoid.in/schizoid-psy.pls"); // Psytrance Stream
-	var container = document.getElementById("station");
-	container.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Psytrance</span>";
+		radio.notifyPlayingStarted("radioStartedToPlay");
+        indicator.show();
+        indicator.spin();
+        radio.playFromURL("http://schizoid.in/schizoid-psy.pls"); // Psytrance Stream
+        var container = document.getElementById("station");
+        container.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Psytrance</span>";
 }
 
 // When Radio begins playing =====================================
 function radioStartedToPlay()
 {
-	indicator.stop();		// Stop Indicator Spinner
+        indicator.stop();               // Stop Indicator Spinner
 }
 
 // When Radio stops playing ======================================
 function radioStoppedPlaying()
-	{
-		indicator.stop();	// Stop Indicator Spinning
-		radio.stop();		// Stops radio 
+        {
+		indicator.stop();       // Stop Indicator Spinning
+		radio.stop();           // Stops radio 
 		}
-		
+                
 // Stop Radio Playing ============================================
 function stopRadio()
 {
-	var radio = new NKInternetPlayer();
-	radio.stop();			// Stop Playing
+        var radio = new NKInternetPlayer();
+        radio.stop();                   // Stop Playing
+		var container = document.getElementById("metadata");
+		container.innerHTML = "<b>Artist &amp; Track:</b><br/><span class=\"metadatatext\">Radio Stopped</span>"
 }
 
 // Mute Radio Playing ============================================
 function muteRadio()
 {
-	radio.mute();			// Mutes playing
+        radio.mute();                   // Mutes playing
 }
 
 // Volume Change (via slider) ====================================
 function VolumeChanged(volume)
 {
-	radio.setVolume(volume); // Set the radio volume
-	var container = document.getElementById("volumeIndicator"); // Update volume info in "volumeIndicator" div
-	container.innerHTML = "Volume: "+volume+"&#37;"
+        radio.setVolume(volume); // Set the radio volume
+        var container = document.getElementById("volumeIndicator"); // Update volume info in "volumeIndicator" div
+        container.innerHTML = "Volume: "+volume+"&#37;"
 }
 
 // Setup Radio Controls ==========================================
 function InitNativeControls()
 {
-	var slider = new NKSlider();
-	slider.init(10, 380, 300, "VolumeChanged");			// Update Volume
-	slider.show();
+        var slider = new NKSlider();
+        slider.init(10, 380, 300, "VolumeChanged");             // Update Volume
+        slider.show();
   
-	var playButton = new NKButton();
-	playButton.init(15, 280, 60, 35, "playRadioProg");	// Plays Progressive stream
-	playButton.setTitle("Prog");
-	playButton.show();
-	
-	var playButton = new NKButton();
-	playButton.init(124, 280, 60, 35, "playRadioChill");// Plays Chillout stream
-	playButton.setTitle("Chill");
-	playButton.show();
-	
-	var playButton = new NKButton();
-	playButton.init(245, 280, 60, 35, "playRadioPsy");	// Plays PsyTrance stream
-	playButton.setTitle("Psy");
-	playButton.show();
-	
-	var backButton = new NKButton();
-	backButton.init(15, 320, 60, 35, "goBack");			// Return to the info page
-	backButton.setTitle("Back");
-	backButton.setTitleColor(176, 23, 31)
-	backButton.show();
+        var playButton = new NKButton();
+        playButton.init(15, 280, 60, 35, "playRadioProg");      // Plays Progressive stream
+        playButton.setTitle("Prog");
+        playButton.show();
+        
+        var playButton = new NKButton();
+        playButton.init(124, 280, 60, 35, "playRadioChill");    // Plays Chillout stream
+        playButton.setTitle("Chill");
+        playButton.show();
+        
+        var playButton = new NKButton();
+        playButton.init(245, 280, 60, 35, "playRadioPsy");      // Plays PsyTrance stream
+        playButton.setTitle("Psy");
+        playButton.show();
+        
+        var backButton = new NKButton();
+        backButton.init(15, 320, 60, 35, "goBack");             // Return to the info page
+        backButton.setTitle("Back");
+        backButton.setTitleColor(176, 23, 31)
+        backButton.show();
 
-	var stopButton = new NKButton();
-	stopButton.init(124, 320, 60, 35, "stopRadio");		// Stop playing
-	stopButton.setTitle("Stop");
-	stopButton.show();
+        var stopButton = new NKButton();
+        stopButton.init(124, 320, 60, 35, "stopRadio");         // Stop playing
+        stopButton.setTitle("Stop");
+        stopButton.show();
 
-	var muteButton = new NKButton();
-	muteButton.init(245, 320, 60, 35, "radio.mute");	// Mute Playing
-	muteButton.setTitle("Mute");
-	muteButton.show();
-	
+        var muteButton = new NKButton();
+        muteButton.init(245, 320, 60, 35, "radio.mute");        // Mute Playing
+        muteButton.setTitle("Mute");
+        muteButton.show();
+        
 }
 
 // goBack - Flips Left, back to nkinternetplayer.html =============
@@ -207,22 +209,22 @@ InitNativeControls();
 // Display & Update Stream Metadata ================================
 function updateMetadata()
 {
-	var metaString = radio.getCurrentMetaString();
-	if (metaString != "(null)")
-	{	
-		var lines = metaString.split(";"); // split into 2 components
-		var titleComponents = lines[0].split("="); // split first component as 0 component is "StreamTitle" and the second component is actual title
-		var title = titleComponents[1]; // here you got title :)
-		// same with url
-		var urlComponents = lines[1].split("=");
-		var urlAddress = urlComponents[1];
-		
-		title = title.substring(1, title.length-1);
-	
-		var container = document.getElementById("metadata");
-		container.innerHTML = "<b>Artist &amp; Track:</b><br/><span class=\"metadatatext\">"+title+"</span>"
-	}
-	setTimeout("updateMetadata()", 3000);
+        var metaString = radio.getCurrentMetaString();
+        if (metaString != "(null)")
+        {       
+                var lines = metaString.split(";"); // split into 2 components
+                var titleComponents = lines[0].split("="); // split first component as 0 component is "StreamTitle" and the second component is actual title
+                var title = titleComponents[1]; // here you got title :)
+                // same with url
+                var urlComponents = lines[1].split("=");
+                var urlAddress = urlComponents[1];
+                
+                title = title.substring(1, title.length-1);
+        
+                var container = document.getElementById("metadata");
+                container.innerHTML = "<b>Artist &amp; Track:</b><br/><span class=\"metadatatext\">"+title+"</span>"
+        }
+        setTimeout("updateMetadata()", 3000);
 }
 
 setTimeout("updateMetadata()", 3000);

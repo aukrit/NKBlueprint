@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+// Show NKGetDeviceType ---------------------------------
+// This function, when called will show a NKGetDeviceType
+function showNKGetDeviceType()
+{
+	NKAlert("DEVICE TYPE", NKGetDeviceType());
+}
+</script>
+
+<div class="greybutton" onClick="showNKGetDeviceType();">Show NKGetDeviceType</div>
+
+
+<div class="infobox">
+<h1>NKGetDeviceType</h1>
+<h2>Description</h2>
+<p>NKGetDeviceType returns the device type as a string. Return values can be "iPhone", "iPad" or "iPod Touch".</p>
+<h2>Usage</h2>
+<p>NKGetDeviceType()</p>
+<h2>Example</h2>
+<p class="code">&lt;a href="#" onClick="showNKGetDeviceType();"&gt;Show NKGetDeviceType&lt;/a&gt;</p>
+<p>When the link is clicked, the "showNKGetDeviceType" function is called &amp; the type of device is displayed:</p>
+<p class="code">function showNKGetDeviceType()<br />{<br />NKAlert("Device Type", NKGetDeviceType());<br />}</p>
+</div>
+
+
+</body>
+</html>
+

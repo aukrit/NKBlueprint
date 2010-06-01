@@ -54,10 +54,20 @@ NKAlert
 NKMapView
 NKSetWebViewBackgroundColor (mentioned in "about.html")
 NKMailComposer
+NKGetUniqueIdentifier
+NKGetDeviceType
 
 ********************************************
 * IN PROGRESS / CLAIMED
 ********************************************
+
+Eviserator:
+---------------
+NKGetUniqueIdentifier
+NKGetDeviceType
+NKIsInternetAvailableViaCellularNetwork
+NKIsInternetAvailableViaWifi
+
 
 HalfMoon:
 ---------------
@@ -73,10 +83,3 @@ NKButton
 NKTextView
 NKTextField
 NKSQLite
-
-Eviserator:
----------------
-NKGetUniqueIdentifier
-NKGetDevice Type
-NKIsInternetAvailableViaCellularNetwork
-NKIsInternetAvailableViaWifi
