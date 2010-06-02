@@ -1,6 +1,13 @@
 ---------------------------------------------------------
 NK BLUEPRINT TODO's
 ---------------------------------------------------------
+
+********************************************
+* BUGS
+********************************************
+
+<a> tag scrolls the page when clicked, very disturbing behavior
+
 ********************************************
 * TO BE DONE
 ********************************************
@@ -56,6 +63,7 @@ NKSetWebViewBackgroundColor (mentioned in "about.html")
 NKMailComposer
 NKGetUniqueIdentifier
 NKGetDeviceType
+NKSQLite
 
 ********************************************
 * IN PROGRESS / CLAIMED
@@ -82,4 +90,3 @@ NKSlider
 NKButton
 NKTextView
 NKTextField
-NKSQLite
