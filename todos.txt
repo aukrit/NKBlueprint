@@ -6,7 +6,10 @@ NK BLUEPRINT TODO's
 * BUGS
 ********************************************
 
-<a> tag scrolls the page when clicked, very disturbing behavior
+NKModalWindow - image bg does not hide when modal hidden
+NKInternetPlayer - Double button press required to change radio stream
+
+FIXED - <a> tag scrolls the page when clicked, very disturbing behavior
 
 ********************************************
 * TO BE DONE
