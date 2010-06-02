@@ -38,6 +38,8 @@
 		1EE3168811A026D6004D6F9A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EE3168711A026D6004D6F9A /* about.html */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		BE0E643711B680390050B41C /* nksqlite.html in Resources */ = {isa = PBXBuildFile; fileRef = BE0E643611B680390050B41C /* nksqlite.html */; };
+		BE0E643911B680660050B41C /* nk.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BE0E643811B680660050B41C /* nk.sqlite */; };
 		BE44BC4E0FCADCA500A143AD /* libNimbleKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE44BC4D0FCADCA500A143AD /* libNimbleKit.a */; };
 		BE4B710610AC96A6004234DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4B710510AC96A6004234DA /* MapKit.framework */; };
 		BE4B711510AC96AD004234DA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4B711410AC96AD004234DA /* StoreKit.framework */; };
@@ -92,6 +94,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* NKBlueprint_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKBlueprint_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* NKBlueprint-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NKBlueprint-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		BE0E643611B680390050B41C /* nksqlite.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nksqlite.html; sourceTree = "<group>"; };
+		BE0E643811B680660050B41C /* nk.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = nk.sqlite; sourceTree = "<group>"; };
 		BE44BC4D0FCADCA500A143AD /* libNimbleKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNimbleKit.a; path = /Library/Frameworks/libNimbleKit.a; sourceTree = "<absolute>"; };
 		BE4B710510AC96A6004234DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BE4B711410AC96AD004234DA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -191,6 +195,7 @@
 				1E3B1A07119AF76500AB5181 /* nk_background.png */,
 				1E692E471199BC1200D342C9 /* Default.png */,
 				1E692E2C1199BA6A00D342C9 /* Icon.png */,
+				BE0E643811B680660050B41C /* nk.sqlite */,
 				1E3B19CE119AF3D400AB5181 /* Images */,
 				BEAC17B20F98BE3900A76568 /* HTML */,
 				1E692E561199BD0B00D342C9 /* Css */,
@@ -251,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				BEAC17AF0F98BE3600A76568 /* main.html */,
+				BE0E643611B680390050B41C /* nksqlite.html */,
 				1EE3168711A026D6004D6F9A /* about.html */,
 				BE5A41AB11A4126200722733 /* nkalertsheet.html */,
 				1E3B198A119AEA3000AB5181 /* nkalert.html */,
@@ -342,6 +348,8 @@
 				1EBF537011B01BC80076D2E1 /* camera32.png in Resources */,
 				1EE3029A11B512A400344945 /* nkgetuniqueidentifier.html in Resources */,
 				1EE3029D11B512BA00344945 /* nkgetdevicetype.html in Resources */,
+				BE0E643711B680390050B41C /* nksqlite.html in Resources */,
+				BE0E643911B680660050B41C /* nk.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
