@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+
+var database = null;
+
+function openDB()
+{
+	database = new NKSQLite();
+	database.openDatabase("nk.sqlite", "no");
+}
+
+function createTable()
+{
+	database.executeSQL("CREATE TABLE todo(pk INTEGER PRIMARY KEY, text VARCHAR(25), priority INTEGER, complete BOOLEAN)");
+}
+
+function insertToDatabase()
+{
+	database.executeSQL("INSERT INTO todo(text,priority,complete) VALUES('Take out the trash',3,0)");
+}
+
+function printResults()
+{
+	database.executeSQL("SELECT * FROM todo");	
+	results = database.getResults();
+	var resultsElement = document.getElementById("results");
+	resultsElement.innerHTML = "";
+	for (i=0; i<results.length; i++)
+	{
+		resultsElement.innerHTML+="<p>"+results[i].priority+" | "+results[i].complete+" | "+results[i].text+"</p>";
+	}
+}
+
+function resetDatabase()
+{
+	if (database) database.closeDatabase();
+	database = new NKSQLite();
+	database.openDatabase("nk.sqlite", "yes");
+}
+
+</script>
+
+<div class="infobox">
+<h1>NKSQLite</h1>
+<h2>Description</h2>
+<p>This class is used to access sqlite databases (initial database must be provided by developer and included into project).</p>
+<h2>Usage</h2>
+<p>
+</p>
+<h2>Example</h2>
+<p class="code">
+var database = new NKSQLite();<br>
+database.openDatabase("nk.sqlite", "no");<br>
+database.executeSQL("CREATE TABLE todo(pk INTEGER PRIMARY KEY, text VARCHAR(25), priority INTEGER, complete BOOLEAN)");<br>
+database.executeSQL("INSERT INTO todo(text,priority,complete) VALUES('Take out the trash',3,0)");<br>
+database.executeSQL("INSERT INTO todo(text,priority,complete) VALUES('Do Computer Science homework',1,0)");<br>
+database.executeSQL("INSERT INTO todo(text,priority,complete) VALUES('Learn Objective C',1,0)");<br>
+database.executeSQL("INSERT INTO todo(text,priority,complete) VALUES('DIGG this tutorial',2,0)");<br>
+database.executeSQL("SELECT * FROM todo");<br>
+results = database.getResults();<br>
+for (i=0; i&lt;results.length; i++)<br>
+{<br>
+	document.body.innerHTML+="&lt;p&gt;"+results[i].priority+" | "+results[i].complete+" | "+results[i].text+"&lt;/p&gt;";<br>
+}<br>
+database.closeDatabase();<br>
+</p>
+<p>Test database using this functions:<br/>
+<div class="greybutton" onClick="openDB();">Open Database</div>
+<div class="greybutton" onClick="createTable();">Create Table</div>
+<div class="greybutton" onClick="insertToDatabase();">Insert values</div>
+<div class="greybutton" onClick="printResults();">Retrieve Results</div>
+<div class="greybutton" onClick="resetDatabase();">Reset Database</div>
+</div>
+
+<div id="results"><div>
+
+</body>
+</html>
