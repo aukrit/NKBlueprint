@@ -8,6 +8,7 @@ NK BLUEPRINT TODO's
 
 NKModalWindow - image bg does not hide when modal hidden
 NKInternetPlayer - Double button press required to change radio stream
+NKToolbar - See comments at bottom of code
 
 FIXED - <a> tag scrolls the page when clicked, very disturbing behavior
 
