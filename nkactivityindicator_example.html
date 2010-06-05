@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+// Create a toolbar at bottom of screen ===========================
+var toolBarBottom = new NKToolBar();
+toolBarBottom.init(323);
+toolBarBottom.addButton("Show", "", "showInd()");
+toolBarBottom.addButton("Spin", "", "startInd()");
+toolBarBottom.addButton("Hide", "", "hideInd()");
+toolBarBottom.addButton("Stop", "", "stopInd()");
+toolBarBottom.addFlexibleSpace();
+toolBarBottom.addDoneButton("Back", "goBack()");
+toolBarBottom.setStyle("default");
+toolBarBottom.show();
+
+// Indicator Functions ============================================
+
+var indicator = new NKActivityIndicator();
+indicator.init(150,100,25,"black");
+
+function showInd() {
+	indicator.show();	// Shows initialized and stopped activity indicator
+	var container = document.getElementById("status");
+	container.innerHTML = "<h2>Indicator Shown</h2>";
+	}
+	
+function hideInd() {
+	indicator.hide();	// Hides initialized activity indicator, no matter which state it has
+	var container = document.getElementById("status");
+	container.innerHTML = "<h2>Indicator Hidden</h2>";
+	}
+	
+function startInd() {
+	indicator.spin();	// Starts controlʼs animation, does nothing if control already animating
+	var container = document.getElementById("status");
+	container.innerHTML = "<h2>Indicator Started</h2>";
+	}
+	
+function stopInd() {
+	indicator.stop();	// Stops controlʼs animation, does nothing if it's not animating
+	var container = document.getElementById("status");
+	container.innerHTML = "<h2>Indicator Stopped</h2>";
+	}
+
+function goBack() {
+	indicator.stop();	// Stop indicator if spinning before we go back
+	NKMoveToPageAnimated("nkactivityindicator.html", "flipleft");
+	}
+
+</script>
+
+<div class="infobox" id="status">
+<h2>Pick an option...</h2>
+</div>
+
+</body>
+</html>
+

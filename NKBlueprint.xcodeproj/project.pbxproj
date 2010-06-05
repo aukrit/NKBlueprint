@@ -35,6 +35,8 @@
 		1E70DC0F11AD6FFA003F1019 /* modalbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E70DC0E11AD6FFA003F1019 /* modalbg.png */; };
 		1E8A542D11A3FF080071122E /* chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E8A542C11A3FF080071122E /* chevron.png */; };
 		1E9CD17411AD2F9B008CE378 /* nkmailcomposer.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E9CD17311AD2F9B008CE378 /* nkmailcomposer.html */; };
+		1EA075FD11BA8F56000AAD10 /* nkactivityindicator.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EA075FC11BA8F56000AAD10 /* nkactivityindicator.html */; };
+		1EA0760211BA9072000AAD10 /* nkactivityindicator_example.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EA0760111BA9072000AAD10 /* nkactivityindicator_example.html */; };
 		1EBF531411B00ED60076D2E1 /* nktoolbar_example.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF531211B00ED60076D2E1 /* nktoolbar_example.html */; };
 		1EBF531511B00ED60076D2E1 /* nktoolbar.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF531311B00ED60076D2E1 /* nktoolbar.html */; };
 		1EBF537011B01BC80076D2E1 /* camera32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF536F11B01BC80076D2E1 /* camera32.png */; };
@@ -94,6 +96,8 @@
 		1E70DC0E11AD6FFA003F1019 /* modalbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modalbg.png; sourceTree = "<group>"; };
 		1E8A542C11A3FF080071122E /* chevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chevron.png; sourceTree = "<group>"; };
 		1E9CD17311AD2F9B008CE378 /* nkmailcomposer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkmailcomposer.html; sourceTree = "<group>"; };
+		1EA075FC11BA8F56000AAD10 /* nkactivityindicator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkactivityindicator.html; sourceTree = "<group>"; };
+		1EA0760111BA9072000AAD10 /* nkactivityindicator_example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkactivityindicator_example.html; sourceTree = "<group>"; };
 		1EBF531211B00ED60076D2E1 /* nktoolbar_example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nktoolbar_example.html; sourceTree = "<group>"; };
 		1EBF531311B00ED60076D2E1 /* nktoolbar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nktoolbar.html; sourceTree = "<group>"; };
 		1EBF536F11B01BC80076D2E1 /* camera32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera32.png; sourceTree = "<group>"; };
@@ -275,6 +279,8 @@
 				1E6AC7D011BA6ABD00096D01 /* picker.html */,
 				1E6AC7D211BA6ACF00096D01 /* search.html */,
 				1EE3168711A026D6004D6F9A /* about.html */,
+				1EA075FC11BA8F56000AAD10 /* nkactivityindicator.html */,
+				1EA0760111BA9072000AAD10 /* nkactivityindicator_example.html */,
 				BE0E643611B680390050B41C /* nksqlite.html */,
 				BE5A41AB11A4126200722733 /* nkalertsheet.html */,
 				1E3B198A119AEA3000AB5181 /* nkalert.html */,
@@ -374,6 +380,8 @@
 				1E6AC7CB11BA691C00096D01 /* icon_search_32.png in Resources */,
 				1E6AC7D111BA6ABD00096D01 /* picker.html in Resources */,
 				1E6AC7D311BA6ACF00096D01 /* search.html in Resources */,
+				1EA075FD11BA8F56000AAD10 /* nkactivityindicator.html in Resources */,
+				1EA0760211BA9072000AAD10 /* nkactivityindicator_example.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

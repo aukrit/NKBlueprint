@@ -8,8 +8,8 @@ NK BLUEPRINT TODO's
 
 NKModalWindow - image bg does not hide when modal hidden
 NKInternetPlayer - Double button press required to change radio stream
-NKToolbar - See comments at bottom of code
 
+FIXED - NKToolbar... I had a superfluous "", which the Done button doesen't use.
 FIXED - <a> tag scrolls the page when clicked, very disturbing behavior
 
 ********************************************
@@ -22,7 +22,6 @@ NKLabel
 NKImageView
 NKSwitch
 NKProgressBar
-NKActivityIndicator
 NKContact
 NKAudioPlayer
 NKVideoPlayer
@@ -60,6 +59,7 @@ Nimble Kit functions
 * DONE
 ********************************************
 
+NKActivityIndicator
 NKAlertSheet
 NKAlert
 NKMapView
@@ -68,6 +68,7 @@ NKMailComposer
 NKGetUniqueIdentifier
 NKGetDeviceType
 NKSQLite
+NKToolbar
 
 ********************************************
 * IN PROGRESS / CLAIMED
@@ -75,8 +76,6 @@ NKSQLite
 
 Eviserator:
 ---------------
-NKGetUniqueIdentifier
-NKGetDeviceType
 NKIsInternetAvailableViaCellularNetwork
 NKIsInternetAvailableViaWifi
 
@@ -85,7 +84,6 @@ HalfMoon:
 ---------------
 NKInternetPlayer
 NKModalWindow
-NKToolBar
 
 Sunny:
 ---------------

@@ -55,7 +55,7 @@ toolBarBottom.addButton("Info", "", "toolbarbotInfo");
 toolBarBottom.addFlexibleSpace();
 toolBarBottom.addButton("", "camera32.png", "toolbarbotImage")
 toolBarBottom.addFlexibleSpace();
-toolBarBottom.addButton("Back To Overview", "", "goBack"); // ********** SEE NOTES BELOW REGARDING CRASH ISSUE ***********
+toolBarBottom.addDoneButton("Back To Overview", "goBack");
 toolBarBottom.setStyle("default");
 toolBarBottom.show();
 // Functions for bottom toolbar ------------------------------------
@@ -65,30 +65,6 @@ function toolbarbotImage() {NKAlert("Image Button", "This button uses an image (
 function goBack() {NKMoveToPageAnimated("nktoolbar.html", "flipleft");}
 
 </script>
-
-<!-- 
-***************************************************************
-* CRASH ISSUE...                                              *
-***************************************************************
-
-
-This line:
----------------------------------------------------------------
-toolBarBottom.addButton("Back To Overview", "", "goBack");
----------------------------------------------------------------
-
-works fine as is, but when changed to a "Done" button:
-
----------------------------------------------------------------
-toolBarBottom.addDoneButton("Back To Overview", "", "goBack");
----------------------------------------------------------------
-
-
-it crashes the app when called?
--->
-
-
-
 
 </body>
 </html>
