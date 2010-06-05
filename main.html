@@ -19,13 +19,14 @@ navController.setTintColor(50, 115, 173);			/* Sets the NavController bar color 
 navController.setImage("nkbpnavbarlogo.png");		/* Adds an image (transparent png) to the NavController, replaces title "Home" */
 navController.setUsesPreloading("yes");				/* Tells NavController to preload pages before moving to them */
 
+// TabController =============================================================
+// Create a Tab Bar at bottom of screen
+var tabController = new NKTabBarController();
+tabController.setTabBarForPage("main.html", "Main", "icon_globe_32.png");
+tabController.setTabBarForPage("picker.html", "Picker", "icon_hand_32.png");
+tabController.setTabBarForPage("search.html", "Search", "icon_search_32.png");
+tabController.setTabBarForPage("about.html", "About", "icon_info_32.png");
 </script>
-
-
-<h2>Misc</h2>
-<ul>
-<li><a onClick="navController.gotoPage('about.html'), navController.setTitleForPage('About NK Blueprint', 'about.html')">About NK Blueprint</a></li>
-</ul>
 
 <h2>Alerts</h2>
 <ul>
