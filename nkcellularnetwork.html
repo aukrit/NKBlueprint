@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+<script type="text/javascript">
+var navController = new NKNavigationController(); 
+navController.setTitle("ViaCellular");
+</script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+
+// Show NKAlert ----------------------------------------------------------
+// This function, when called will show if NKIsAvailableViaCellularNetwork
+// status (0 = NO, 1 = YES)
+function showCellularNetwork()
+{
+	NKAlert("NKIsInternetAvailableViaCellularNetwork", NKIsInternetAvailableViaCellularNetwork());
+}
+</script>
+
+
+<div class="greybutton" onClick="showCellularNetwork();">Show NKIsAvailableViaCellularNetwork</div>
+
+
+<div class="infobox">
+<h1>NKIsAvailableCellularNetwork</h1>
+<h2>Description</h2>
+<p>NKIsAvailableViaCellularNetwork ... </p>
+<h2>Usage</h2>
+<p>NKIsAvailableViaCellularNetwork()</p>
+<h2>Example</h2>
+<p class="code">&lt;a href="#" onClick="showCellularNetwork();"&gt;Show NKIsAvailableViaCellularNetwork&lt;/a&gt;</p>
+<p>When the link is clicked, the "showCellularNetwork" function is called &amp; the status is displayed:</p>
+<p class="code">function showCellularNetwork()<br />{<br />NKIsAvailableViaCellularNetwork();<br />}</p>
+</div>
+
+
+</body>
+</html>
+

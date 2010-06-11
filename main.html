@@ -17,7 +17,7 @@ var navController = new NKNavigationController();	/* Creates the Navigation Cont
 navController.setTitle("Home");						/* Sets the title that will be visible in other pages */
 navController.setTintColor(50, 115, 173);			/* Sets the NavController bar color in RGB */
 navController.setImage("nkbpnavbarlogo.png");		/* Adds an image (transparent png) to the NavController, replaces title "Home" */
-navController.setUsesPreloading("yes");				/* Tells NavController to preload pages before moving to them */
+//navController.setUsesPreloading("yes");				/* Tells NavController to preload pages before moving to them */
 
 // TabController =============================================================
 // Create a Tab Bar at bottom of screen
@@ -80,6 +80,7 @@ tabController.setTabBarForPage("about.html", "About", "icon_info_32.png");
 <ul>
 <li><a onClick="navController.gotoPage('nkgetuniqueidentifier.html'), navController.setTitleForPage('NK GetUniqueIdentifier', 'nkgetuniqueidentifier.html')">NKGetUniqueIdentifier</a></li>
 <li><a onClick="navController.gotoPage('nkgetdevicetype.html'), navController.setTitleForPage('NK GetDeviceType', 'nkgetdevicetype.html');">NKGetDeviceType</a></li>
+<li><a onClick="navController.gotoPage('nkisinternetavailablevia.html');">NKIsInternetAvailableVia...</a></li>
 </ul>
 
 </body>

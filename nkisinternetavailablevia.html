@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>			<!-- Link to NimbleKit js file -->
+<script type="text/javascript" src="javascript.js"></script>	<!-- Link to custom js file (user created) -->
+
+<script type="text/javascript">
+var navController = new NKNavigationController();		// Create a new NavController so we can move onto next pages
+navController.setTitle("NKIsInternetAvailable...");		// Set pages title
+</script>
+
+</head>
+
+<body>
+<h2>NKIsInternetAvailable...</h2>
+<ul>
+<li><a onClick="navController.gotoPage('nkcellularnetwork.html');">CellularNetwork</a></li>
+<li><a onClick="navController.gotoPage('nkwifi.html');">Wifi</a></li>
+</ul>
+
+</body>
+</html>
+

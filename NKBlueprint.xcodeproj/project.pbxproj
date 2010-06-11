@@ -13,6 +13,9 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		1E1C35C311AE851200131A9C /* nkinternetplayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E1C35C211AE851200131A9C /* nkinternetplayer.html */; };
 		1E2ECD7C11AFDB9A00045AAC /* nkinternetplayer_example.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E2ECD7B11AFDB9A00045AAC /* nkinternetplayer_example.html */; };
+		1E38995611C24429006076B7 /* nkcellularnetwork.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E38995311C24429006076B7 /* nkcellularnetwork.html */; };
+		1E38995711C24429006076B7 /* nkisinternetavailablevia.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E38995411C24429006076B7 /* nkisinternetavailablevia.html */; };
+		1E38995811C24429006076B7 /* nkwifi.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E38995511C24429006076B7 /* nkwifi.html */; };
 		1E3B1960119AB45C00AB5181 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B195F119AB45C00AB5181 /* readme.txt */; };
 		1E3B198B119AEA3000AB5181 /* nkalert.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B198A119AEA3000AB5181 /* nkalert.html */; };
 		1E3B19D2119AF3E200AB5181 /* nkbpnavbarlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B19D1119AF3E200AB5181 /* nkbpnavbarlogo.png */; };
@@ -74,6 +77,9 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1E1C35C211AE851200131A9C /* nkinternetplayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkinternetplayer.html; sourceTree = "<group>"; };
 		1E2ECD7B11AFDB9A00045AAC /* nkinternetplayer_example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkinternetplayer_example.html; sourceTree = "<group>"; };
+		1E38995311C24429006076B7 /* nkcellularnetwork.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkcellularnetwork.html; sourceTree = "<group>"; };
+		1E38995411C24429006076B7 /* nkisinternetavailablevia.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkisinternetavailablevia.html; sourceTree = "<group>"; };
+		1E38995511C24429006076B7 /* nkwifi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkwifi.html; sourceTree = "<group>"; };
 		1E3B195F119AB45C00AB5181 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		1E3B198A119AEA3000AB5181 /* nkalert.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkalert.html; sourceTree = "<group>"; };
 		1E3B19D1119AF3E200AB5181 /* nkbpnavbarlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nkbpnavbarlogo.png; sourceTree = "<group>"; };
@@ -294,6 +300,9 @@
 				1E70DBAD11AD60C1003F1019 /* nkmodalwindow.html */,
 				1EBF531311B00ED60076D2E1 /* nktoolbar.html */,
 				1EBF531211B00ED60076D2E1 /* nktoolbar_example.html */,
+				1E38995411C24429006076B7 /* nkisinternetavailablevia.html */,
+				1E38995311C24429006076B7 /* nkcellularnetwork.html */,
+				1E38995511C24429006076B7 /* nkwifi.html */,
 				1E5E70A811ABE13A00CD5342 /* template.html */,
 			);
 			name = HTML;
@@ -382,6 +391,9 @@
 				1E6AC7D311BA6ACF00096D01 /* search.html in Resources */,
 				1EA075FD11BA8F56000AAD10 /* nkactivityindicator.html in Resources */,
 				1EA0760211BA9072000AAD10 /* nkactivityindicator_example.html in Resources */,
+				1E38995611C24429006076B7 /* nkcellularnetwork.html in Resources */,
+				1E38995711C24429006076B7 /* nkisinternetavailablevia.html in Resources */,
+				1E38995811C24429006076B7 /* nkwifi.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
