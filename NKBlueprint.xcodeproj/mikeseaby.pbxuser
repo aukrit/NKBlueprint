@@ -20,6 +20,16 @@
 			1E692D7E11999BD400D342C9 /* NKBlueprint */,
 		);
 	};
+	1E01DA7C1355F0BD00F1C9D5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1ECD744611AC3E8600889118 /* todos.txt */;
+		name = "todos.txt: 27";
+		rLen = 0;
+		rLoc = 725;
+		rType = 0;
+		vrLen = 732;
+		vrLoc = 617;
+	};
 	1E1C35C211AE851200131A9C /* nkinternetplayer.html */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {946, 734}}";
@@ -186,7 +196,7 @@
 		vrLen = 312;
 		vrLoc = 513;
 	};
-	1E93420F1355EB9B008BD256 /* PBXTextBookmark */ = {
+	1E9342131355ED54008BD256 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1ECD744611AC3E8600889118 /* todos.txt */;
 		name = "todos.txt: 27";
@@ -236,7 +246,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {989, 1287}}";
 			sepNavSelRange = "{725, 0}";
-			sepNavVisRange = "{617, 739}";
+			sepNavVisRange = "{617, 732}";
 		};
 	};
 	1EE3029911B512A400344945 /* nkgetuniqueidentifier.html */ = {
@@ -343,12 +353,13 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 324397947;
-			PBXWorkspaceStateSaveDate = 324397947;
+			PBXPerProjectTemplateStateSaveDate = 324399282;
+			PBXWorkspaceStateSaveDate = 324399282;
 		};
 		perUserProjectItems = {
-			1E93420E1355EB9B008BD256 /* PBXTextBookmark */ = 1E93420E1355EB9B008BD256 /* PBXTextBookmark */;
-			1E93420F1355EB9B008BD256 /* PBXTextBookmark */ = 1E93420F1355EB9B008BD256 /* PBXTextBookmark */;
+			1E01DA7C1355F0BD00F1C9D5 /* PBXTextBookmark */ = 1E01DA7C1355F0BD00F1C9D5 /* PBXTextBookmark */;
+			1E93420E1355EB9B008BD256 = 1E93420E1355EB9B008BD256 /* PBXTextBookmark */;
+			1E9342131355ED54008BD256 = 1E9342131355ED54008BD256 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 1E692DA111999BDD00D342C9 /* Source Control */;
 		userBuildSettings = {
