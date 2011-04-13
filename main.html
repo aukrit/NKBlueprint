@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="style.css" type="text/css"/>
 <script type="text/javascript" src="NKit.js"></script>			<!-- Link to NimbleKit js file -->
-<script type="text/javascript" src="javascript.js"></script>	<!-- Link to custom js file (user created) -->
+<script type="text/javascript" src="javascript.js"></script>	<!-- Link to custom js file (user created) NB:Remove from compile sources -->
 
 </head>
 
@@ -17,7 +17,7 @@ var navController = new NKNavigationController();	/* Creates the Navigation Cont
 navController.setTitle("Home");						/* Sets the title that will be visible in other pages */
 navController.setTintColor(50, 115, 173);			/* Sets the NavController bar color in RGB */
 navController.setImage("nkbpnavbarlogo.png");		/* Adds an image (transparent png) to the NavController, replaces title "Home" */
-//navController.setUsesPreloading("yes");				/* Tells NavController to preload pages before moving to them */
+//navController.setUsesPreloading("yes");			/* Tells NavController to preload pages before moving to them */
 
 // TabController =============================================================
 // Create a Tab Bar at bottom of screen

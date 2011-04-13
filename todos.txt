@@ -19,7 +19,7 @@ FIXED - <a> tag scrolls the page when clicked, very disturbing behavior
 NKTabBarController
 NKNavigationController
 NKLabel
-NKImageView
+NKImage
 NKSwitch
 NKProgressBar
 NKContact
@@ -32,6 +32,11 @@ NKFileDownloader
 NKAppStore
 NKPasteboard
 NKImage
+NKWebView
+NKBanner
+NKTableView
+NKSMSComposer
+NKPopoverController
 
 Photo library/camera support
 
@@ -49,7 +54,14 @@ Nimble Kit functions
 • NKLog
 • NKConfirm
 • NKExecuteJavascriptOnPage
-• NKNativeControlRotate
+• NKGetUniqueIdentifier
+• NKGetDeviceType
+• NKSetPageOpaque
+• NKGetParameter
+• NKConfirm
+• NKExecuteJavascriptOnPage
+• NKGetAppVersion
+• NKPreloadPage
 
 ********************************************
 * DONE
