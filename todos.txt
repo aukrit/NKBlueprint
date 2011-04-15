@@ -95,8 +95,4 @@ NKModalWindow
 
 Sunny:
 ---------------
-NKApplication
-NKSlider
-NKButton
-NKTextView
-NKTextField
+Will add new functionality instead of existing
