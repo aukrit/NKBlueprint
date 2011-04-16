@@ -11,6 +11,13 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1E0EF04F1359B2670058E27D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0EF04E1359B2670058E27D /* Default.png */; };
+		1E0EF0511359B26D0058E27D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0EF0501359B26D0058E27D /* Default@2x.png */; };
+		1E0EF0531359B2730058E27D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0EF0521359B2730058E27D /* Icon.png */; };
+		1E0EF0551359B2790058E27D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0EF0541359B2790058E27D /* Icon@2x.png */; };
+		1E0EF0571359B2870058E27D /* annoicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0EF0561359B2870058E27D /* annoicon.png */; };
+		1E0EF0591359B2950058E27D /* nk_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0EF0581359B2950058E27D /* nk_background.png */; };
+		1E0EF05B1359B2AC0058E27D /* nkbpnavbarlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0EF05A1359B2AC0058E27D /* nkbpnavbarlogo.png */; };
 		1E1C35C311AE851200131A9C /* nkinternetplayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E1C35C211AE851200131A9C /* nkinternetplayer.html */; };
 		1E2ECD7C11AFDB9A00045AAC /* nkinternetplayer_example.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E2ECD7B11AFDB9A00045AAC /* nkinternetplayer_example.html */; };
 		1E38995611C24429006076B7 /* nkcellularnetwork.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E38995311C24429006076B7 /* nkcellularnetwork.html */; };
@@ -18,15 +25,10 @@
 		1E38995811C24429006076B7 /* nkwifi.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E38995511C24429006076B7 /* nkwifi.html */; };
 		1E3B1960119AB45C00AB5181 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B195F119AB45C00AB5181 /* readme.txt */; };
 		1E3B198B119AEA3000AB5181 /* nkalert.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B198A119AEA3000AB5181 /* nkalert.html */; };
-		1E3B19D2119AF3E200AB5181 /* nkbpnavbarlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B19D1119AF3E200AB5181 /* nkbpnavbarlogo.png */; };
-		1E3B1A08119AF76500AB5181 /* nk_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3B1A07119AF76500AB5181 /* nk_background.png */; };
 		1E5E70A911ABE13A00CD5342 /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E5E70A811ABE13A00CD5342 /* template.html */; };
 		1E5E70AF11ABE2D500CD5342 /* nkmapview.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E5E70AE11ABE2D500CD5342 /* nkmapview.html */; };
 		1E5E70B111ABE31B00CD5342 /* nkmapview_example.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E5E70B011ABE31B00CD5342 /* nkmapview_example.html */; };
-		1E5E718C11AC22B800CD5342 /* annoicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E5E718B11AC22B800CD5342 /* annoicon.png */; };
 		1E692DA51199A6DE00D342C9 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 1E692DA41199A6DE00D342C9 /* style.css */; };
-		1E692E2D1199BA6A00D342C9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E692E2C1199BA6A00D342C9 /* Icon.png */; };
-		1E692E481199BC1200D342C9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E692E471199BC1200D342C9 /* Default.png */; };
 		1E692E531199BCE800D342C9 /* javascript.js in Resources */ = {isa = PBXBuildFile; fileRef = 1E692E521199BCE800D342C9 /* javascript.js */; };
 		1E6AC7C811BA691C00096D01 /* icon_globe_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E6AC7C411BA691C00096D01 /* icon_globe_32.png */; };
 		1E6AC7C911BA691C00096D01 /* icon_hand_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E6AC7C511BA691C00096D01 /* icon_hand_32.png */; };
@@ -75,6 +77,13 @@
 		1D3623250D0F684500981E51 /* NKBlueprintAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKBlueprintAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* NKBlueprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKBlueprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1E0EF04E1359B2670058E27D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1E0EF0501359B26D0058E27D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1E0EF0521359B2730058E27D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1E0EF0541359B2790058E27D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		1E0EF0561359B2870058E27D /* annoicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annoicon.png; sourceTree = "<group>"; };
+		1E0EF0581359B2950058E27D /* nk_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nk_background.png; sourceTree = "<group>"; };
+		1E0EF05A1359B2AC0058E27D /* nkbpnavbarlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nkbpnavbarlogo.png; sourceTree = "<group>"; };
 		1E1C35C211AE851200131A9C /* nkinternetplayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkinternetplayer.html; sourceTree = "<group>"; };
 		1E2ECD7B11AFDB9A00045AAC /* nkinternetplayer_example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkinternetplayer_example.html; sourceTree = "<group>"; };
 		1E38995311C24429006076B7 /* nkcellularnetwork.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkcellularnetwork.html; sourceTree = "<group>"; };
@@ -82,15 +91,10 @@
 		1E38995511C24429006076B7 /* nkwifi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkwifi.html; sourceTree = "<group>"; };
 		1E3B195F119AB45C00AB5181 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		1E3B198A119AEA3000AB5181 /* nkalert.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkalert.html; sourceTree = "<group>"; };
-		1E3B19D1119AF3E200AB5181 /* nkbpnavbarlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nkbpnavbarlogo.png; sourceTree = "<group>"; };
-		1E3B1A07119AF76500AB5181 /* nk_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nk_background.png; sourceTree = "<group>"; };
 		1E5E70A811ABE13A00CD5342 /* template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
 		1E5E70AE11ABE2D500CD5342 /* nkmapview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkmapview.html; sourceTree = "<group>"; };
 		1E5E70B011ABE31B00CD5342 /* nkmapview_example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkmapview_example.html; sourceTree = "<group>"; };
-		1E5E718B11AC22B800CD5342 /* annoicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annoicon.png; sourceTree = "<group>"; };
 		1E692DA41199A6DE00D342C9 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		1E692E2C1199BA6A00D342C9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		1E692E471199BC1200D342C9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1E692E521199BCE800D342C9 /* javascript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = javascript.js; sourceTree = "<group>"; };
 		1E6AC7C411BA691C00096D01 /* icon_globe_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_globe_32.png; sourceTree = "<group>"; };
 		1E6AC7C511BA691C00096D01 /* icon_hand_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hand_32.png; sourceTree = "<group>"; };
@@ -183,15 +187,15 @@
 		1E3B19CE119AF3D400AB5181 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1E5E718B11AC22B800CD5342 /* annoicon.png */,
+				1E0EF0561359B2870058E27D /* annoicon.png */,
 				1EBF536F11B01BC80076D2E1 /* camera32.png */,
-				1E3B19D1119AF3E200AB5181 /* nkbpnavbarlogo.png */,
 				1E70DC0E11AD6FFA003F1019 /* modalbg.png */,
 				1E8A542C11A3FF080071122E /* chevron.png */,
 				1E6AC7C411BA691C00096D01 /* icon_globe_32.png */,
 				1E6AC7C511BA691C00096D01 /* icon_hand_32.png */,
 				1E6AC7C611BA691C00096D01 /* icon_info_32.png */,
 				1E6AC7C711BA691C00096D01 /* icon_search_32.png */,
+				1E0EF05A1359B2AC0058E27D /* nkbpnavbarlogo.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -215,12 +219,14 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				1E0EF0541359B2790058E27D /* Icon@2x.png */,
+				1E0EF0521359B2730058E27D /* Icon.png */,
+				1E0EF0501359B26D0058E27D /* Default@2x.png */,
+				1E0EF04E1359B2670058E27D /* Default.png */,
+				1E0EF0581359B2950058E27D /* nk_background.png */,
 				1E3B195F119AB45C00AB5181 /* readme.txt */,
 				1ECD744611AC3E8600889118 /* todos.txt */,
 				BEA91A2911A420600079817B /* changelog.txt */,
-				1E3B1A07119AF76500AB5181 /* nk_background.png */,
-				1E692E471199BC1200D342C9 /* Default.png */,
-				1E692E2C1199BA6A00D342C9 /* Icon.png */,
 				BE0E643811B680660050B41C /* nk.sqlite */,
 				1E3B19CE119AF3D400AB5181 /* Images */,
 				BEAC17B20F98BE3900A76568 /* HTML */,
@@ -360,12 +366,8 @@
 				BEAC17B00F98BE3600A76568 /* main.html in Resources */,
 				BEAD72DC0FF0355D00C589B0 /* NKit.xcconfig in Resources */,
 				1E692DA51199A6DE00D342C9 /* style.css in Resources */,
-				1E692E2D1199BA6A00D342C9 /* Icon.png in Resources */,
-				1E692E481199BC1200D342C9 /* Default.png in Resources */,
 				1E3B1960119AB45C00AB5181 /* readme.txt in Resources */,
 				1E3B198B119AEA3000AB5181 /* nkalert.html in Resources */,
-				1E3B19D2119AF3E200AB5181 /* nkbpnavbarlogo.png in Resources */,
-				1E3B1A08119AF76500AB5181 /* nk_background.png in Resources */,
 				1EE3168811A026D6004D6F9A /* about.html in Resources */,
 				1E8A542D11A3FF080071122E /* chevron.png in Resources */,
 				BE5A41AC11A4126200722733 /* nkalertsheet.html in Resources */,
@@ -373,7 +375,6 @@
 				1E5E70A911ABE13A00CD5342 /* template.html in Resources */,
 				1E5E70AF11ABE2D500CD5342 /* nkmapview.html in Resources */,
 				1E5E70B111ABE31B00CD5342 /* nkmapview_example.html in Resources */,
-				1E5E718C11AC22B800CD5342 /* annoicon.png in Resources */,
 				1ECD744711AC3E8600889118 /* todos.txt in Resources */,
 				1E9CD17411AD2F9B008CE378 /* nkmailcomposer.html in Resources */,
 				1E70DBAE11AD60C1003F1019 /* nkmodalwindow.html in Resources */,
@@ -398,6 +399,13 @@
 				1E38995611C24429006076B7 /* nkcellularnetwork.html in Resources */,
 				1E38995711C24429006076B7 /* nkisinternetavailablevia.html in Resources */,
 				1E38995811C24429006076B7 /* nkwifi.html in Resources */,
+				1E0EF04F1359B2670058E27D /* Default.png in Resources */,
+				1E0EF0511359B26D0058E27D /* Default@2x.png in Resources */,
+				1E0EF0531359B2730058E27D /* Icon.png in Resources */,
+				1E0EF0551359B2790058E27D /* Icon@2x.png in Resources */,
+				1E0EF0571359B2870058E27D /* annoicon.png in Resources */,
+				1E0EF0591359B2950058E27D /* nk_background.png in Resources */,
+				1E0EF05B1359B2AC0058E27D /* nkbpnavbarlogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

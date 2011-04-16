@@ -10,7 +10,15 @@
 
 @interface NKBlueprintAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-}
+    
+    // Fancy Fade/Zoom After Load 
+    //*********************************
+    UIImageView *splashView;  
+} 
+
+    // Fancy Fade/Zoom After Load 
+    //********************************* 
+- (void)startupAnimationDone:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context; // Fancy Fade/Zoom After Load
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
