@@ -6,62 +6,13 @@ NK BLUEPRINT TODO's
 * BUGS
 ********************************************
 
-NKModalWindow - image bg does not hide when modal hidden
-NKInternetPlayer - Double button press required to change radio stream
-
-FIXED - NKToolbar... I had a superfluous "", which Done button doesn't use.
-FIXED - <a> tag scrolls the page when clicked, very disturbing behavior
+Moved to PT: https://www.pivotaltracker.com/projects/273479
 
 ********************************************
 * TO BE DONE
 ********************************************
 
-NKTabBarController
-NKNavigationController
-NKLabel
-NKImage
-NKSwitch
-NKProgressBar
-NKContact
-NKAudioPlayer
-NKVideoPlayer
-NKSystemVolumeControl
-NKFile
-NKSettings
-NKFileDownloader
-NKAppStore
-NKPasteboard
-NKImage
-NKWebView
-NKBanner
-NKTableView
-NKSMSComposer
-NKPopoverController
-
-Photo library/camera support
-
-Orientation support
-
-Application Events
-
-Nimble Kit functions
-• NKMoveToPageAnimated
-• NKOpenURLInSafari
-• NKStartPreloadingPage
-• NKReloadPage
-• NKGetLibraryVersion
-• NKGetParameter
-• NKLog
-• NKConfirm
-• NKExecuteJavascriptOnPage
-• NKGetUniqueIdentifier
-• NKGetDeviceType
-• NKSetPageOpaque
-• NKGetParameter
-• NKConfirm
-• NKExecuteJavascriptOnPage
-• NKGetAppVersion
-• NKPreloadPage
+Moved to PT: https://www.pivotaltracker.com/projects/273479
 
 ********************************************
 * DONE
@@ -87,11 +38,6 @@ NKIsInternetAvailableViaWifi
 Eviserator:
 ---------------
 
-
-HalfMoon:
----------------
-NKInternetPlayer
-NKModalWindow
 
 Sunny:
 ---------------
