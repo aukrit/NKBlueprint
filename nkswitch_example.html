@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+        
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="NKit.js"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+        
+        <style type="text/css">
+            html, body	{
+                background: url('nk_background.png');
+            }
+            </style>
+    </head>
+    
+    <body>
+        
+        <div class="infobox">
+            <p>Value of switch is <span id="value">0</span></p>
+        </div>
+        
+        <script type="text/javascript">
+            
+            // Create switch ===============================================
+            var uiswitch = new NKSwitch();          // Create switch object
+            uiswitch.init(120, 150, "switchChanged"); // Initialize switch at 20px from left of screen and 70px down with a callback to function named "switchChanged"
+            uiswitch.show();                        // Make switch visible
+            
+            var state = uiswitch.getState();        // Check for initial state of switch
+            
+            
+            // Callback function when switch is changed ====================
+            function switchChanged(value, id) {
+                document.getElementById('value').innerHTML=value;
+            }
+            
+            // Create buttons to control switch "remote" ====================
+            var onButton = new NKButton();
+            onButton.init(10, 240, 140, 40, "switchOn");
+            onButton.setTitle("Turn switch ON");
+            onButton.show();
+            
+            var offButton = new NKButton();
+            offButton.init(170, 240, 140, 40, "switchOff");
+            offButton.setTitle("Turn switch OFF");
+            offButton.show();
+            
+            // Functions for buttons =========================================
+            function switchOn() {
+                uiswitch.setState(1);   // Change the state of the switch, 1 = ON
+                setTimeout("document.getElementById('value').innerHTML=uiswitch.getState();",100); // Set a small timeout before getting current state since animation delays setting the new state of the switch.
+            }
+            
+            function switchOff() {
+                uiswitch.setState(0);   // Change the state of the switch, 0 = OFF
+                setTimeout("document.getElementById('value').innerHTML=uiswitch.getState();",100); // Set a small timeout before getting current state since animation delays setting the new state of the switch.
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </script>
+        
+    </body>
+</html>
