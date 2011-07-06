@@ -25,7 +25,7 @@ var tabController = new NKTabBarController();
 
 
 tabController.setTabBarForPage("main.html", "Main", "icon_globe_32"); 
-/* If not specifying the extension for the image the application will automaticly select, in this case, icon_globe_32.png for iPhone and icon_globe_32@2x.png for iPhone4/retina display. The @2x-image should be double the size. */
+/* If not specifying the extension for the image the application will automaticly select, in this case, icon_globe_32.png for iPhone and icon_globe_32@2x.png for iPhone4/retina display. The @2x-image should be double the size. If no @2x-icon is availiable, standard icon (without the @2x) will be used. */
 tabController.setTabBarForPage("picker.html", "Picker", "icon_hand_32.png");
 tabController.setTabBarForPage("search.html", "Search", "icon_search_32.png");
 tabController.setTabBarForPage("about.html", "About", "icon_info_32.png");
