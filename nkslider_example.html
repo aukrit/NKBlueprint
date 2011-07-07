@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+        
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="NKit.js"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+        
+        <style type="text/css">
+            html, body	{
+                background: url('nk_background.png');
+            }
+            </style>
+    </head>
+    
+    <body>
+        
+        <div class="infobox">
+            <p>Use sliders to change to color of the canvas.</p>
+        </div>
+        
+        <canvas id="small_canvas" width="300" height="100" style="-webkit-border-radius:8px;"></canvas>
+        
+        
+        
+        <script type="text/javascript">
+            
+            // Create variables that will hold values from slider ===============================
+            
+            var red = 0;
+            var green = 0;
+            var blue = 0;
+            
+            // Create 3 slider controls, one slider for each color (R,G,B) ======================
+            
+            // Controls for RED
+            var RSlider = new NKSlider();               // Create slider object
+            RSlider.init(50, 250, 210, "showColor");    // Create slider 50px from left of screen, 330px down and 210px wide. Call function "showColor" on change
+            RSlider.setValue(red);                        // Set the initial value of slider to value of variable "red"
+            RSlider.show();                             // Make slider visible
+            
+            var RLabel = new NKLabel();
+            RLabel.init(10, 250, 30, 30, 'R:');
+            RLabel.setTextColor(255, 0, 0);
+            RLabel.show();
+            
+            var RValueLabel = new NKLabel();
+            RValueLabel.init(270, 250, 50, 30, 0);
+            RValueLabel.setTextColor(255, 0, 0);
+            RValueLabel.show();
+            
+            // Controls for GREEN
+            var GSlider = new NKSlider();
+            GSlider.init(50, 280, 210, "showColor");
+            GSlider.setValue(green);
+            GSlider.show();
+            
+            var GLabel = new NKLabel();
+            GLabel.init(10, 280, 30, 30, 'G:');
+            GLabel.setTextColor(0, 255, 0);
+            GLabel.show();
+            
+            var GValueLabel = new NKLabel();
+            GValueLabel.init(270, 280, 50, 30, 0);
+            GValueLabel.setTextColor(0, 255, 0);
+            GValueLabel.show();
+            
+            // Controls for BLUE
+            var BSlider = new NKSlider();
+            BSlider.init(50, 310, 210, "showColor");
+            BSlider.setValue(blue);
+            BSlider.show();
+            
+            var BLabel = new NKLabel();
+            BLabel.init(10, 310, 30, 30, 'B:');
+            BLabel.setTextColor(0, 0, 255);
+            BLabel.show();
+            
+            var BValueLabel = new NKLabel();
+            BValueLabel.init(270, 310, 50, 30, 0);
+            BValueLabel.setTextColor(0, 0, 255);
+            BValueLabel.show();
+            
+            var small_canvas = document.getElementById("small_canvas");
+            var context = small_canvas.getContext("2d");
+            context.fillStyle = "rgba(0, 0, 0, 1)";
+            context.fillRect(0, 0, 300, 220);
+            
+            // Function for handling callback from all 3 sliders ======================================
+            
+            function showColor(value, slider) {
+                switch(slider)                                  // Check witch one of the 3 sliders that's been changed (index 0, 1 or 2)
+                {
+                    case 0:                                     // If case slider with index 0 changed (RSlider)
+                    red = Math.round(255/100*value);            // Recalculate value of slider (0-100) to rgb value (0-255)
+                    RValueLabel.setString(red);                 // Show value of slider 
+                    break;
+                    
+                    // The next slider will have the index "3" since we first created a slider (index 0), then two labels (index 1 and 2).
+                    case 3:
+                    green = Math.round(255/100*value);
+                    GValueLabel.setString(green);
+                    break;
+                    
+                    case 6:
+                    blue = Math.round(255/100*value);
+                    BValueLabel.setString(blue);
+                    break;
+                    
+                    // If another value than 0, 3 or 6 is passed to this function this part will execute. 
+                    // In that case it's not our sliders that calls the function.
+                    default:                                                
+                    NKAlert('Error', slider+' is not a valid slider....');
+                }
+                
+                context.fillStyle = "rgb("+red+","+green+","+blue+")";
+                context.fillRect(0, 0, 300, 220);
+                
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </script>
+        
+    </body>
+</html>
