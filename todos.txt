@@ -30,6 +30,8 @@ NKSQLite
 NKToolbar
 NKIsInternetAvailableViaCellularNetwork
 NKIsInternetAvailableViaWifi
+NKProgressBar
+NKSwitch
 
 ********************************************
 * IN PROGRESS / CLAIMED
