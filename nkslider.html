@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+        
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="NKit.js"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+        
+        <script type="text/javascript">
+            // Give Page a NKNavigationController Title
+            var navController = new NKNavigationController();
+            navController.setTitle("NKSlider");
+            </script>
+        
+    </head>
+    
+    <body>
+        
+        <script type="text/javascript">
+            // .js For Page ----------------------------------------------
+            </script>
+        
+        <div class="greybutton" OnClick="NKMoveToPageAnimated('nkslider_example.html', 'flipRight')">Show NKSlider</div>
+        
+        
+        
+        <div class="infobox">
+            <h1>NKSlider</h1>
+            <h2>Description</h2>
+            <p>Creates native Cocoa Touch slider. Control is created on the top layer of page, so if there are html elements on given coordinates control will overlap them.</p>
+            <h2>Usage</h2>
+            <p><b>init(x, y, width, callback)</b><br />initializes slider control at given coordinates with a set width and a callback (name of the function as string) to be called when slider value is changed. Callback format should be functionName(value, controlID). "value" will be between 0 and 100 and controlID is an ID of the control (in case you have one callback for many controls).</p>
+            <p><b>show()</b><br />shows initialized slider, does nothing if already shown.</p>
+            <p><b>hide()</b><br />hides initialized slider, does nothing if already hidden.</p>
+            <p><b>setValue(value)</b><br />set's current value [0..100]</p>
+            <h2>Example</h2>
+            <p>Initialize a slider</p>
+            <p class="code">
+            var slider = new NKSlider();<br />
+            slider.init(20, 325, 280, "myFunction");<br />
+            slider.setValue(20);<br />
+            slider.show();
+            </p>
+            <p>See the example source code for a more detailed implementation.</p>
+            
+            
+        </div>
+        
+        
+    </body>
+</html>

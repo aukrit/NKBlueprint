@@ -3,3 +3,4 @@ build/
 *.mode1v3
 NKBlueprint.xcodeproj/project.xcworkspace
 NKBlueprint.xcodeproj/xcuserdata
+.DS_Store
