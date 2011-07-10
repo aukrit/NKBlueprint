@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+    <script type="text/javascript">
+    // Give Page a NKNavigationController Title
+    var navController = new NKNavigationController();
+    navController.setTitle("NK Label");
+    </script>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+// .js For Page ----------------------------------------------
+</script>
+
+<div class="greybutton" onClick="NKMoveToPageAnimated('nklabel_example.html', 'flipRight')">Show NK Label Example</div>
+
+
+<div class="infobox">
+<h1>NK Label</h1>
+<h2>Description</h2>
+<p>NK Label is used to display static text</p>
+
+<h2>Usage</h2>
+	<p><b>init(x, y, width, height, value)</b><br />
+	Initializes NKLabel with it's frame and initial value, this method is mandatory to call right after class creation.<br />
+	<b>show()</b><br />
+	Shows initialized toolbar<br />
+	<b>hide()</b><br />
+	Hides initialized label on the current view<br />
+	<b>setString(newValue)</b><br />
+	Sets new value to the label's text<br />
+	<b>setTextFontSize(size)</b><br />
+	sets the font size for initialized label<br/>
+	<b>setTextColor(r, g, b)</b><br />
+	Sets the color of the text using red, green and blue components (0 - 255)</p>
+	
+	
+<h2>Example</h2>
+<p class="code">
+var label = new NKLabel();<br/>
+label.init(20, 20, 280, 70, "This is a label");<br/>
+label.setTextFontSize(20);<br/>
+label.setTextColor(0, 0, 0);<br/>
+label.show();</p>
+</div>
+
+
+</body>
+</html>

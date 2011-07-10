@@ -47,6 +47,8 @@
 		1EBF531511B00ED60076D2E1 /* nktoolbar.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF531311B00ED60076D2E1 /* nktoolbar.html */; };
 		1EBF537011B01BC80076D2E1 /* camera32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF536F11B01BC80076D2E1 /* camera32.png */; };
 		1ECD744711AC3E8600889118 /* todos.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1ECD744611AC3E8600889118 /* todos.txt */; };
+		1ED1EB9A13C9FB220085026B /* nklabel_example.html in Resources */ = {isa = PBXBuildFile; fileRef = 1ED1EB9813C9FB220085026B /* nklabel_example.html */; };
+		1ED1EB9B13C9FB220085026B /* nklabel.html in Resources */ = {isa = PBXBuildFile; fileRef = 1ED1EB9913C9FB220085026B /* nklabel.html */; };
 		1EE3029A11B512A400344945 /* nkgetuniqueidentifier.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EE3029911B512A400344945 /* nkgetuniqueidentifier.html */; };
 		1EE3029D11B512BA00344945 /* nkgetdevicetype.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EE3029C11B512BA00344945 /* nkgetdevicetype.html */; };
 		1EE3168811A026D6004D6F9A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EE3168711A026D6004D6F9A /* about.html */; };
@@ -120,6 +122,8 @@
 		1EBF531311B00ED60076D2E1 /* nktoolbar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nktoolbar.html; sourceTree = "<group>"; };
 		1EBF536F11B01BC80076D2E1 /* camera32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera32.png; sourceTree = "<group>"; };
 		1ECD744611AC3E8600889118 /* todos.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todos.txt; sourceTree = "<group>"; };
+		1ED1EB9813C9FB220085026B /* nklabel_example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nklabel_example.html; sourceTree = "<group>"; };
+		1ED1EB9913C9FB220085026B /* nklabel.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nklabel.html; sourceTree = "<group>"; };
 		1EE3029911B512A400344945 /* nkgetuniqueidentifier.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkgetuniqueidentifier.html; sourceTree = "<group>"; };
 		1EE3029C11B512BA00344945 /* nkgetdevicetype.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkgetdevicetype.html; sourceTree = "<group>"; };
 		1EE3168711A026D6004D6F9A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
@@ -327,10 +331,12 @@
 				8CC04D0013C500FE003B3AD2 /* nkprogressbar_example.html */,
 				8CC04D0213C518F9003B3AD2 /* nkswitch.html */,
 				8CC04D0413C51C0F003B3AD2 /* nkswitch_example.html */,
-				1E5E70A811ABE13A00CD5342 /* template.html */,
 				8CC04D0613C64A52003B3AD2 /* nkslider.html */,
 				8CC04D0813C64BF5003B3AD2 /* nkslider_example.html */,
 				1EAE108313C9BE3C00E9997C /* nksystemvolumecontrol.html */,
+				1ED1EB9813C9FB220085026B /* nklabel_example.html */,
+				1ED1EB9913C9FB220085026B /* nklabel.html */,
+				1E5E70A811ABE13A00CD5342 /* template.html */,
 			);
 			name = HTML;
 			sourceTree = "<group>";
@@ -434,6 +440,8 @@
 				8CC04D0713C64A52003B3AD2 /* nkslider.html in Resources */,
 				8CC04D0913C64BF5003B3AD2 /* nkslider_example.html in Resources */,
 				1EAE108413C9BE3C00E9997C /* nksystemvolumecontrol.html in Resources */,
+				1ED1EB9A13C9FB220085026B /* nklabel_example.html in Resources */,
+				1ED1EB9B13C9FB220085026B /* nklabel.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

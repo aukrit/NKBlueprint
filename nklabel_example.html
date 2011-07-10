@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+	
+<body>
+	
+	<script type="text/javascript">
+		//	Set Up Label ==================================================
+		var label = new NKLabel();
+		label.init(20, 20, 280, 70, "This is a label");
+		label.setTextFontSize(20);
+		label.setTextColor(0, 0, 0);
+		label.show();
+		
+		function labelText() {
+			label.setString("Text Updated");
+		}
+		
+		function labelColor() {
+			label.setTextColor(255, 0, 0);
+			label.setString("Red Text");
+		}
+		
+		function labelFont() {
+			label.setTextFontSize(60);
+			label.setString("Big Text!");
+		}
+		
+		function labelReset() {
+			label.setTextFontSize(20);
+			label.setTextColor(0, 0, 0);
+			label.setString("This is a label");
+		}
+		
+		// Create a toolbar at bottom of screen ===========================
+		var toolBarBottom = new NKToolBar();
+		toolBarBottom.init(323);
+		toolBarBottom.addButton("New Text", "", "labelText");
+		toolBarBottom.addButton("Color", "", "labelColor");
+		toolBarBottom.addButton("Big", "", "labelFont");
+		toolBarBottom.addButton("Reset", "", "labelReset");
+		toolBarBottom.addDoneButton("Back", "goBack");
+		toolBarBottom.setStyle("default");
+		toolBarBottom.show();
+		
+		
+		function goBack() {NKMoveToPageAnimated("nklabel.html", "flipleft");}
+		
+		</script>
+	
+</body>
+</html>
