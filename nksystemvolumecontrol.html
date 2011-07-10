@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+	<script type="text/javascript">
+	// Give Page a NKNavigationController Title
+	var navController = new NKNavigationController();
+		navController.setTitle("NKSystemVolumeControl");
+	</script>
+
+</head>
+
+<body>
+
+	<script type="text/javascript">
+	
+	// Set Up & Show NKSystemVolumeControl ----------------------------------------------
+	var sysVol = new NKSystemVolumeControl();
+		sysVol.init(10, 10, 300);
+		sysVol.show();
+
+	</script>
+	
+
+<br /><br /> <!-- Lazy method to shift page content down to make space for the NKSystemVolumeControl ;) -->
+
+<div class="infobox">
+<h1>NKSystemVolumeControl</h1>
+<h2>Description</h2>
+<p>NKSystemVolumeControl is used to control iOS sound volume globally.</p>
+<p>Only available on Device - simulator will show <em>"No Volume Available"</em> message.</p>
+
+<h2>Usage</h2>
+<p>init(x, y, width)</p>
+
+<h2>Example</h2>
+<p class="code">
+var sysVol = new NKSystemVolumeControl();<br />
+sysVol.init(10, 10, 300);<br />
+sysVol.show();
+</p>
+
+<p>Initializes and shows UI control to control system sound volume, looks similar to progress bar. As with most NK native controls, it is fixed position (ie. does not scroll with web page) but can be called multiple times to reposition control if needed.</p>
+
+</div>
+
+</body>
+</html>

@@ -42,6 +42,7 @@
 		1E9CD17411AD2F9B008CE378 /* nkmailcomposer.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E9CD17311AD2F9B008CE378 /* nkmailcomposer.html */; };
 		1EA075FD11BA8F56000AAD10 /* nkactivityindicator.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EA075FC11BA8F56000AAD10 /* nkactivityindicator.html */; };
 		1EA0760211BA9072000AAD10 /* nkactivityindicator_example.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EA0760111BA9072000AAD10 /* nkactivityindicator_example.html */; };
+		1EAE108413C9BE3C00E9997C /* nksystemvolumecontrol.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EAE108313C9BE3C00E9997C /* nksystemvolumecontrol.html */; };
 		1EBF531411B00ED60076D2E1 /* nktoolbar_example.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF531211B00ED60076D2E1 /* nktoolbar_example.html */; };
 		1EBF531511B00ED60076D2E1 /* nktoolbar.html in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF531311B00ED60076D2E1 /* nktoolbar.html */; };
 		1EBF537011B01BC80076D2E1 /* camera32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF536F11B01BC80076D2E1 /* camera32.png */; };
@@ -114,6 +115,7 @@
 		1E9CD17311AD2F9B008CE378 /* nkmailcomposer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkmailcomposer.html; sourceTree = "<group>"; };
 		1EA075FC11BA8F56000AAD10 /* nkactivityindicator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkactivityindicator.html; sourceTree = "<group>"; };
 		1EA0760111BA9072000AAD10 /* nkactivityindicator_example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nkactivityindicator_example.html; sourceTree = "<group>"; };
+		1EAE108313C9BE3C00E9997C /* nksystemvolumecontrol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nksystemvolumecontrol.html; sourceTree = "<group>"; };
 		1EBF531211B00ED60076D2E1 /* nktoolbar_example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nktoolbar_example.html; sourceTree = "<group>"; };
 		1EBF531311B00ED60076D2E1 /* nktoolbar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nktoolbar.html; sourceTree = "<group>"; };
 		1EBF536F11B01BC80076D2E1 /* camera32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera32.png; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				1E5E70A811ABE13A00CD5342 /* template.html */,
 				8CC04D0613C64A52003B3AD2 /* nkslider.html */,
 				8CC04D0813C64BF5003B3AD2 /* nkslider_example.html */,
+				1EAE108313C9BE3C00E9997C /* nksystemvolumecontrol.html */,
 			);
 			name = HTML;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				8CC04D0513C51C0F003B3AD2 /* nkswitch_example.html in Resources */,
 				8CC04D0713C64A52003B3AD2 /* nkslider.html in Resources */,
 				8CC04D0913C64BF5003B3AD2 /* nkslider_example.html in Resources */,
+				1EAE108413C9BE3C00E9997C /* nksystemvolumecontrol.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,12 +494,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -504,11 +511,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
