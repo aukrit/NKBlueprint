@@ -7,10 +7,8 @@
         <script type="text/javascript" src="javascript.js"></script>
         
         <style type="text/css">
-            html, body	{
-                background: url('nk_background.png');
-            }
-            </style>
+		body {background: url('nk_background.png');}
+        </style>
     </head>
     
     <body>
@@ -29,7 +27,7 @@
             toolBarBottom.setStyle("default");
             toolBarBottom.show();
             // Functions for bottom toolbar ===================================
-            function goBack() {NKMoveToPageAnimated("nktoolbar.html", "flipleft");}
+            function goBack() {NKMoveToPageAnimated("nkprogressbar.html", "flipleft");}
             
             var val = 0; // Variable that keeps track of current value for progressbar
             
@@ -45,7 +43,6 @@
             label.show();
             
             // Functions for progressbar ========================================
-            
             
             function increaseProgressBar() {
                 if(val == 100) break;               // Make sure that value doesn't go over 100

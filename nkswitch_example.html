@@ -7,10 +7,9 @@
         <script type="text/javascript" src="javascript.js"></script>
         
         <style type="text/css">
-            html, body	{
-                background: url('nk_background.png');
-            }
-            </style>
+		body{background: url('nk_background.png');}
+		</style>
+		
     </head>
     
     <body>
@@ -56,15 +55,14 @@
                 setTimeout("document.getElementById('value').innerHTML=uiswitch.getState();",100); // Set a small timeout before getting current state since animation delays setting the new state of the switch.
             }
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
+			// Back To Overview ==============================================
+			function goBack() 
+			{NKMoveToPageAnimated("nkswitch.html", "flipleft");}
+			
+            var backButton = new NKButton();
+            backButton.init(170, 300, 140, 40, "goBack");
+            backButton.setTitle("Back");
+            backButton.show();
             
             </script>
         

@@ -7,10 +7,9 @@
         <script type="text/javascript" src="javascript.js"></script>
         
         <style type="text/css">
-            html, body	{
-                background: url('nk_background.png');
-            }
-            </style>
+         body	{background: url('nk_background.png');}
+		</style>
+		
     </head>
     
     <body>
@@ -117,17 +116,17 @@
                 context.fillRect(0, 0, 300, 220);
                 
             }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+			
+						            
+            // Back To Overview ==============================================
+			function goBack() 
+			{NKMoveToPageAnimated("nkslider.html", "flipleft");}
+			
+            var backButton = new NKButton();
+            backButton.init(255, 335, 60, 30, "goBack");
+            backButton.setTitle("Back");
+            backButton.show();
+           
             </script>
         
     </body>

@@ -1,241 +1,228 @@
 <html>
 <head>
-<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
-
-<link rel="stylesheet" href="style.css" type="text/css"/>
+<meta name ="viewport" content ="initial-scale = 1.0, user-scalable = no" />
 <script type="text/javascript" src="NKit.js"></script>
-<script type="text/javascript" src="javascript.js"></script>
 
 <style type="text/css">
-html, body      {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        color: #fff;
-        font-family: Arial Rounded MT Bold;
-        background: url('nk_background.png');
-}
+	html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #333;
+	text-shadow:1px 1px 0 #fff;
+	font-family: Arial Rounded MT Bold;
+	background: url('nk_background.png');
+	-webkit-tap-highlight-color: none;
+	}
 
+	#station {
+	padding: 10px;
+	margin: 10px;
+	height:50px;
+	font-size: 10px;
+	-webkit-border-radius:10px;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,  from(#DDDDDD), to(#CCCCCC));
+	}
 
-#station {
-        padding: 10px;
-        margin: 10px;
-        color: #fff;
-        font-size: 10px;
-        -webkit-border-radius:10px;
-        text-shadow:1px 1px 0 #000;
-        background-color:#333;
-}
+	#track {
+	padding: 10px;
+	margin: 10px;
+	height:60px;
+	font-size: 10px;
+	-webkit-border-radius:10px;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,  from(#DDDDDD), to(#CCCCCC));
+	}
 
-#metadata {
-        padding: 10px;
-        margin: 10px;
-        height:135px;
-        font-size: 10px;
-        text-shadow:1px 1px 0 #000;
-        -webkit-border-radius:10px;
-        background-color:#333;
-}
+	.metadatatext {font-size: 16px;}
 
-.metadatatext {
-        font-size: 16px;
-        text-shadow:1px 1px 0 #000;
-}
+/* Buttons For Radio Controls */
 
-#volumeIndicator {
-        padding: 5px 10px;
-        margin: 10px;
-        color: #fff;
-        font-size: 10px;
-        -webkit-border-radius:10px;
-        text-shadow:1px 1px 0 #000;
-        background-color:#333;
-}
+	#segment {margin:10px;}
 
-#internetplayervolbox {
-        position:fixed;
-        left: 0px;
-        width:320px;
-        top: 374px;
-        height: 42px;
-        background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#525252), to(#525252), color-stop(.5,#000000));
-}
+	.segmented_control {display: inline-block;}
+
+	.segmented_control button {
+	margin: 0;
+	padding: 10px 12px;
+	border: 1px solid #777;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 12px;
+	font-family: Arial Rounded MT Bold;
+	background: #eee;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+	width:100px;
+	height:50px;
+	}
+
+	.segmented_control button.left {
+	border-right: 0;
+	border-radius: 10px 0 0 10px;
+	-webkit-background-clip: padding-box;
+	}
+
+	.segmented_control button.middle {
+	margin-left: -5px;
+	border-right: 0;
+	}
+
+	.segmented_control button.right {
+	margin-left: -5px;
+	border-radius: 0 10px 10px 0;
+	-webkit-background-clip: padding-box;
+	}
+
+	.segmented_control button:active {
+	background: #ccc;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d2ff52), to(#91e842));
+	text-shadow: 0 1px 0 #eee;
+	-webkit-box-shadow: inset 0 1px 4px #000;
+	box-shadow: inset 0 1px 4px #000;
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+	-webkit-user-select: none;
+	} 
 </style>
+
 </head>
 
-<body>
-
 <script type="text/javascript">
-// Check for an active internet connection =========================
-if (NKIsInternetAvailableViaWifi() != "1")
-{
+
+	// Check for an active internet connection =========================
+	if (NKIsInternetAvailableViaWifi() != "1")
+	{
         if (NKIsInternetAvailableViaCellularNetwork() != "1")
         {
-                NKAlert("No Data Connection", "An active Internet Connection is required to play streaming radio.");
+			NKAlert("No Data Connection", "An active Internet Connection is required to play streaming radio.");
         }
-}
-
-// Prevent Page Scroll ===========================================
-document.ontouchmove = function(event){
-event.preventDefault();
-}
-
-// init activity indicator to show when radio is loading =========
-var indicator = new NKActivityIndicator();
-indicator.init(150,150,30,"white");
-
-// Create a global instance of the internet player ===============
-var radio = new NKInternetPlayer();
-//radio.notifyPlayingStarted("radioStartedToPlay"); 
-//radio.notifyPlayingStopped("radioStoppedPlaying");
-
-// Play Stations =================================================
-
-function playRadioProg()
-{
-		radio.notifyPlayingStarted("radioStartedToPlay"); 
-        indicator.show();
-        indicator.spin();
-        radio.playFromURL("http://schizoid.in/schizoid-prog.pls"); // Progressive Stream
-        var container = document.getElementById("station");
-        container.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Progressive</span>";
-}
-
-function playRadioChill()
-{
-		radio.notifyPlayingStarted("radioStartedToPlay"); 
-        indicator.show();
-        indicator.spin();
-        radio.playFromURL("http://schizoid.in/schizoid-chill.pls"); // Chillout  Stream
-        var container = document.getElementById("station");
-        container.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Chillout</span>";
-}
-
-function playRadioPsy()
-{
+	}
+	
+	// Prevent Page Scroll ===========================================
+	document.ontouchmove = function(event){event.preventDefault();}	
+		
+	// Create a global instance of the internet player ===============
+	var radio = new NKInternetPlayer();
+	var stationUrl;
+	
+	// Init activity indicator to show when radio is loading =========
+	var indicator = new NKActivityIndicator();
+		indicator.init(280,15,20,"black");
+	
+	// Use a NKToolBar for BG of Volume Slider =======================
+	var sliderBar = new NKToolBar();
+	sliderBar.init(330);
+	sliderBar.setStyle("blacktranslucent");
+	sliderBar.show();
+	
+	// Create & Show The Volume Control Slider =======================
+	var slider = new NKSlider();
+	slider.init(10, 330, 300, "VolumeChanged");
+	slider.show();
+	
+	
+	// Play Stations =================================================
+	
+	
+	function playRadioProg() {
+		stationUrl = "http://schizoid.in/schizoid-prog.pls";
+		playRadio();
+		station.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Progressive</span>";
 		radio.notifyPlayingStarted("radioStartedToPlay");
-        indicator.show();
+	}
+	
+	function playRadioChill() {
+		stationUrl = "http://schizoid.in/schizoid-chill.pls";
+		playRadio();
+		station.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Chillout</span>";
+		radio.notifyPlayingStarted("radioStartedToPlay");
+	}
+	
+	function playRadioPsy() {
+		stationUrl = "http://schizoid.in/schizoid-psy.pls";
+		playRadio();
+		station.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - PsyTrance</span>";
+		radio.notifyPlayingStarted("radioStartedToPlay");
+	}
+	
+	function playRadio() {
+		radio.stop();
+		indicator.show();
         indicator.spin();
-        radio.playFromURL("http://schizoid.in/schizoid-psy.pls"); // Psytrance Stream
-        var container = document.getElementById("station");
-        container.innerHTML = "Station:<br/><span class=\"metadatatext\">Radio Schizoid - Psytrance</span>";
-}
-
-// When Radio begins playing =====================================
-function radioStartedToPlay()
-{
+		radio.playFromURL(stationUrl);
+	}
+	
+	// Stop Radio Playing ============================================
+	function stopRadio() {
+		radio.stop();                   // Stop Playing
+		track.innerHTML = "<b>Artist &amp; Track:</b><br/><span class=\"metadatatext\">Radio Stopped</span>"
+	}
+	
+	// Mute Radio Playing ============================================
+	function muteRadio()
+	{
+        radio.mute();                   // Mutes radio
+	}
+	
+	// When Radio begins playing =====================================
+	function radioStartedToPlay()
+	{
         indicator.stop();               // Stop Indicator Spinner
-}
-
-// When Radio stops playing ======================================
-function radioStoppedPlaying()
-        {
-		indicator.stop();       // Stop Indicator Spinning
-		radio.stop();           // Stops radio 
-		}
-                
-// Stop Radio Playing ============================================
-function stopRadio()
-{
-        var radio = new NKInternetPlayer();
-        radio.stop();                   // Stop Playing
-		var container = document.getElementById("metadata");
-		container.innerHTML = "<b>Artist &amp; Track:</b><br/><span class=\"metadatatext\">Radio Stopped</span>"
-}
-
-// Mute Radio Playing ============================================
-function muteRadio()
-{
-        radio.mute();                   // Mutes playing
-}
-
-// Volume Change (via slider) ====================================
-function VolumeChanged(volume)
-{
+	}
+	
+	// Volume Change (via slider) ====================================
+	function VolumeChanged(volume)
+	{
         radio.setVolume(volume); // Set the radio volume
-        var container = document.getElementById("volumeIndicator"); // Update volume info in "volumeIndicator" div
-        container.innerHTML = "Volume: "+volume+"&#37;"
-}
+	}
 
-// Setup Radio Controls ==========================================
-function InitNativeControls()
-{
-        var slider = new NKSlider();
-        slider.init(10, 380, 300, "VolumeChanged");             // Update Volume
-        slider.show();
-  
-        var playButton = new NKButton();
-        playButton.init(15, 280, 60, 35, "playRadioProg");      // Plays Progressive stream
-        playButton.setTitle("Prog");
-        playButton.show();
-        
-        var playButton = new NKButton();
-        playButton.init(124, 280, 60, 35, "playRadioChill");    // Plays Chillout stream
-        playButton.setTitle("Chill");
-        playButton.show();
-        
-        var playButton = new NKButton();
-        playButton.init(245, 280, 60, 35, "playRadioPsy");      // Plays PsyTrance stream
-        playButton.setTitle("Psy");
-        playButton.show();
-        
-        var backButton = new NKButton();
-        backButton.init(15, 320, 60, 35, "goBack");             // Return to the info page
-        backButton.setTitle("Back");
-        backButton.setTitleColor(176, 23, 31)
-        backButton.show();
-
-        var stopButton = new NKButton();
-        stopButton.init(124, 320, 60, 35, "stopRadio");         // Stop playing
-        stopButton.setTitle("Stop");
-        stopButton.show();
-
-        var muteButton = new NKButton();
-        muteButton.init(245, 320, 60, 35, "radio.mute");        // Mute Playing
-        muteButton.setTitle("Mute");
-        muteButton.show();
-        
-}
-
-// goBack - Flips Left, back to nkinternetplayer.html =============
-function goBack() 
-{
-NKMoveToPageAnimated("nkinternetplayer.html", "flipleft"); // Go to nkinternetplayer.html, with a "flip left" transition
-}
-
-// Call & Show The Controls ========================================
-InitNativeControls();
-
-// Display & Update Stream Metadata ================================
-function updateMetadata()
-{
-        var metaString = radio.getCurrentMetaString();
-        if (metaString != "(null)")
-        {       
-                var lines = metaString.split(";"); // split into 2 components
-                var titleComponents = lines[0].split("="); // split first component as 0 component is "StreamTitle" and the second component is actual title
-                var title = titleComponents[1]; // here you got title :)
-                // same with url
-                var urlComponents = lines[1].split("=");
-                var urlAddress = urlComponents[1];
-                
-                title = title.substring(1, title.length-1);
-        
-                var container = document.getElementById("metadata");
-                container.innerHTML = "<b>Artist &amp; Track:</b><br/><span class=\"metadatatext\">"+title+"</span>"
-        }
-        setTimeout("updateMetadata()", 3000);
-}
-
-setTimeout("updateMetadata()", 3000);
-
-
+	// Display & Update Stream Metadata ================================
+	
+	 function updateMetadata()
+	 {
+	 var metaString = radio.getCurrentMetaString();
+	 if (metaString != "(null)")
+	 {       
+	 var lines = metaString.split(";"); // split into 2 components
+	 var titleComponents = lines[0].split("="); // split first component as 0 component is "StreamTitle" and the second component is actual title
+	 var title = titleComponents[1]; // here you got title :)
+	 // same with url
+	 var urlComponents = lines[1].split("=");
+	 var urlAddress = urlComponents[1];
+	 
+	 title = title.substring(1, title.length-1);
+	 
+	 track.innerHTML = "<b>Artist &amp; Track:</b><br/><span class=\"metadatatext\">"+title+"</span>"
+	 }
+	 setTimeout("updateMetadata()", 3000);
+	 }
+	 
+	 setTimeout("updateMetadata()", 3000);
+	 
+	// goBack - Flips Left, back to nkinternetplayer.html =============
+	function goBack() 
+	{
+		NKMoveToPageAnimated("nkinternetplayer.html", "flipleft"); // Go to nkinternetplayer.html, with a "flip left" transition
+	} 
+		
 </script>
-
-
-<div id="station">Station:<br/><span class="metadatatext">Radio Schizoid - Pick A Stream</span></div>
-<div id="metadata">Nothing Playing Yet...</div>
-<div id="volumeIndicator">Volume: 100&#37;</div>
-<div id="internetplayervolbox"></div>
+	
+	
+	<div id="station">Station:<br/><span class="metadatatext">Radio Schizoid - Pick A Stream</span></div>
+	<div id="track">Nothing Playing Yet...</div>
+	
+	<div id="segment">
+		<div class="segmented_control">
+			<button type="button" class="left" onClick="playRadioProg()">Prog &#9834;</button>
+			<button type="button" class="middle" onClick="playRadioChill()">Chill &#9834;</button>
+			<button type="button" class="right" onClick="playRadioPsy()">Psy &#9834;</button>
+		</div>
+	</div>
+	
+	<div id="segment">
+		<div class="segmented_control">
+			<button type="button" class="left" onClick="stopRadio()">Stop &#8226;</button>
+			<button type="button" class="middle" onClick="muteRadio()">Mute &#215;</button>
+			<button type="button" class="right" onClick="goBack()">Back &raquo;</button>
+		</div>
+	</div>
+	
 </body>
 </html>
