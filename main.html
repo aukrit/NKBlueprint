@@ -11,6 +11,16 @@
 <body>
 
 <script type="text/javascript">
+// TabController =============================================================
+// Create a Tab Bar at bottom of screen
+var tabController = new NKTabBarController();
+tabController.setTabBarForPage("main.html", "Main", "icon_globe_32"); 
+/* If not specifying the extension for the image the application will automaticly select, in this case, icon_globe_32.png for iPhone and icon_globe_32@2x.png for iPhone4/retina display. The @2x-image should be double the size. If no @2x-icon is availiable, standard icon (without the @2x) will be used. */
+tabController.setTabBarForPage("picker.html", "Picker", "icon_hand_32.png");
+tabController.setTabBarForPage("search.html", "Search", "icon_search_32.png");
+tabController.setTabBarForPage("about.html", "About", "icon_info_32.png");
+
+	
 // NavController =============================================================
 // Create a Navigation Controller (bar at top of screen)
 var navController = new NKNavigationController();	/* Creates the Navigation Controller */
@@ -19,16 +29,6 @@ navController.setTintColor(50, 115, 173);			/* Sets the NavController bar color 
 navController.setImage("nkbpnavbarlogo.png");		/* Adds an image (transparent png) to the NavController, replaces title "Home" */
 //navController.setUsesPreloading("yes");			/* Tells NavController to preload pages before moving to them */
 
-// TabController =============================================================
-// Create a Tab Bar at bottom of screen
-var tabController = new NKTabBarController();
-
-
-tabController.setTabBarForPage("main.html", "Main", "icon_globe_32"); 
-/* If not specifying the extension for the image the application will automaticly select, in this case, icon_globe_32.png for iPhone and icon_globe_32@2x.png for iPhone4/retina display. The @2x-image should be double the size. If no @2x-icon is availiable, standard icon (without the @2x) will be used. */
-tabController.setTabBarForPage("picker.html", "Picker", "icon_hand_32.png");
-tabController.setTabBarForPage("search.html", "Search", "icon_search_32.png");
-tabController.setTabBarForPage("about.html", "About", "icon_info_32.png");
 </script>
 
 <h2>Alerts</h2>
