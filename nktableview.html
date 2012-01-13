@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+        
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="NKit.js"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+        
+        <script type="text/javascript">
+            // Give Page a NKNavigationController Title
+            var navController = new NKNavigationController();
+            navController.setTitle("NKTableView");
+            </script>
+        
+    </head>
+    
+    <body>
+        
+        <script type="text/javascript">
+            // .js For Page ----------------------------------------------
+            </script>
+        
+        <div class="greybutton" OnClick="NKMoveToPageAnimated('nktableview_example.html', 'flipRight')">Show TableView Example</div>        
+        
+        
+        <div class="infobox">
+            <h1>NKTableView</h1>
+            <h2>Description</h2>
+            <p>TableView objects are used to present hierarchical lists of information.</p>
+            <h2>Usage</h2>
+            <p><b>init(x, y, width, height, style)</b><br />initializes table view object with initial frame, where it will be displayed. Parameter <i>style</i> can be "grouped" or "plain"</p>
+            <p><b>show()</b><br />shows control (not creating).</p>
+            <p><b>hide()</b><br />hides control (not destroying).</p>
+            <p><b>setEditing(isEditing)</b><br />switches tableview to editing mode, where user can manipulate table rows, reorder and remove any rows. Parameter <i>isEditing</i> can be either "yes" or "no".</p>
+            <p><b>setUserCanEditRows(canEdit)</b><br />enables/disables ability to delete rows using swipe gestures, be default this is disabled.</p>
+            <p><b>insertCategoryNamed(name)</b><br />inserts new category/section in table view with specified name.</p>
+            <p><b>insertRecord(title, subtitle, image, sectionNumber, rightImage, callback)</b><br />inserts new row to the table.</p>
+            <p><b>Parameters:</b><br />
+            <b>title</b> - row's main title.<br />
+            <b>subtitle</b> - row's subtitle, usually it is a description for the title<br />
+            <b>image</b> - NKImage instance, which represents the image to be displayed in the left part of the row. Images larger then row height will be down scaled to row height. Images smaller then row height will appear at their original size.<br />
+            <b>sectionNumber</b> - number of the section where the row must be inserted (starting from 0).<br />
+            <b>rightImage</b> - small image to be displayed in the right part of the row, usually showing that the item is clickable, if empty then default OS's action image will be used.<br />
+            <b>callback</b> - is a real javascript code to be executed when the item is clicked.</p>
+            <p><b>bindToDataBase(dbName, tableName, optionalQuery)</b><br />binds tableview to the given database using it's table as datasource, binding the database will destroy all the content in table view which was added earlier. optionalQuery is an optional parameter used to specify raw sql query to select table's content from database, for example: <i>"SELECT * FROM products WHERE category='Fruits'"</i>. Of course you can use the query to load data sorted and to do other things which are allowed by SQL SELECT queries. To let NimbleKit know how data in a table view must be presented you need to have 6 columns in the database table, which are named exactly like following:</p>
+            <p><b>category</b> - name of the category to which the row is related (for example "Fruits")<br /> 
+            <b>title</b> - Row's main title (for example "Apple")<br />
+            <b>subtitle</b> - Row's subtitle/description (for example "Nice green fruit")<br />
+            <b>image</b> - the name of the image file which will be used in the left part of the row, can be the name from application bundle, documents folder or even an url to the image in the internet.<br />
+            <b>right_image</b> - the image name if the small image to be displayed in the right part of the row, usually showing that the item is clickable, if empty then default OSʼs action image will be used. Can be the name from application bundle, documents folder or even an url to the image in the internet.<br />
+            <b>js</b> - javascript code to be executed when the row is clicked. This is very useful as it will be loaded much faster then the code on the page, making application more responsive and page to load faster improving user experience.<br /></p>
+            <p>If you want to apply filter or resort data in table view you can call bindToDatabase multiple times with different "optionalQuery"s.</p>
+            <p><b>commitDatabaseChanges()</b><br />flushes changes made to the table view (using setEditing) into the database. This method isn't must have, on application quit changes will be flushed anyway, however different situations may occur. This function works only if database has been bound to the table view. 
+                <b>Warning:</b> if you quit iPhone simulator using CMD+Q then changes aren't written into the database, make sure you'r either using commitDatabaseChanges or quit simulator app using home button, this warning is only applies for iPhone/iPad simulator.</p>
+            <p><b>setRowHeight(height)</b><br />sets the row height for all rows in table.<br />
+            <i>height</i> - row's height in pixels</p>
+            <p><b>insertRecords(records)</b><br />inserts array of records to the table.<br />
+            <i>records</i> - array of records</p>
+            <h2>Example</h2>
+            <p>Initialization of the tableview.</p>
+            <p class="code">
+            var tableView = new NKTableView();<br />
+            tableView.init(0, 0, 320, 300, 'plain');
+            </p>
+            <p>Fill the tableView with data and then show it.</p>
+            <p class="code">
+            tableView.insertCategoryNamed('Category 1');<br />
+            tableView.insertCategoryNamed('Category 2');<br />
+            tableView.show();<br/>
+            </p>
+            <p>Insert two rows into "Category 1" without any left image and with default right arrow.</p>
+            <p class="code">
+            tableView.insertRecord('First row', 'With a subtitle', '', 0, '', "onRowClick()");<br />
+            tableView.insertRecord('Second row (no subtitle)', '', '', 0, '', "onRowClick()");<br />
+            </p>
+            <p>Insert one row into "Category 2" with left image and default right arrow.</p>
+            <p class="code">
+            var image = new NKImage();<br />
+            image.loadFromBundle('myImage.png');<br />
+            tableView.insertRecord('Third row', 'nice image huh?!', image.id, 1, '', "onRowClick()");<br />
+            </p>
+            <p>See the example source code for a more detailed implementation.</p>
+            
+            
+        </div>
+        
+        
+    </body>
+</html>
