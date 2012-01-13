@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+        
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="NKit.js"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+        
+    </head>
+	
+    <body>
+        
+        <script type="text/javascript">
+            //	Init plain tableview ==================================================
+            var plainTableView = new NKTableView();
+            plainTableView.init(0, 0, 320, 300, 'plain');
+            
+            //  Set tableView editable and add callback for removing a row
+            plainTableView.setUserCanEditRows(1);
+            plainTableView.setOnRowRemovedCallback("itemRemoved()");
+            
+            //  Fill the tableView with data and then show it.
+            plainTableView.insertCategoryNamed('Without images');
+            plainTableView.insertCategoryNamed('With left image');
+            plainTableView.insertCategoryNamed('Other');
+            plainTableView.show();
+        
+            //  Insert two rows into first category without any left image and with default right arrow.
+            plainTableView.insertRecord('First row', 'With a subtitle', '', 0, '', "onRowClick()");
+            plainTableView.insertRecord('Second row (no subtitle)', '', '', 0, '', "onRowClick()");
+            
+            //  Insert one row into second category with left image and default right arrow.
+            var image = new NKImage();
+            image.loadFromBundle("annoicon.png");
+            plainTableView.insertRecord('Third row', 'nice image huh?!', image, 1, '', "onRowClick()");
+            
+            //  More rows
+            plainTableView.insertRecord('Swipe to delete', 'You can swipe any row to delete it', '', 2, '', "onRowClick()");
+            
+            //	Init grouped tableview ==================================================
+            var groupedTableView = new NKTableView();
+            groupedTableView.init(0, 0, 320, 300, 'grouped');
+            
+            //  Fill the tableView with data, don't show yet....
+            groupedTableView.insertCategoryNamed('Without images');
+            groupedTableView.insertCategoryNamed('With left image');
+            
+            //  Insert two rows into first category without any left image and with default right arrow.
+            groupedTableView.insertRecord('First row', 'With a subtitle', '', 0, '', "onRowClick()");
+            groupedTableView.insertRecord('Second row (no subtitle)', '', '', 0, '', "onRowClick()");
+            
+            //  Insert one row into second category with left image and default right arrow.
+            var image = new NKImage();
+            image.loadFromBundle("annoicon.png");
+            groupedTableView.insertRecord('Third row', 'nice image huh?!', image, 1, '', "onRowClick()");
+            
+            // Create a toolbar at bottom of screen ===========================
+            var toolBarBottom = new NKToolBar();
+            toolBarBottom.init(323);
+            toolBarBottom.addButton("Plain", "", "switchToPlain()");
+            toolBarBottom.addFlexibleSpace();
+            toolBarBottom.addButton("Grouped", "", "switchToGrouped()");
+            toolBarBottom.addFlexibleSpace();
+            toolBarBottom.addDoneButton("Back", "goBack");
+            toolBarBottom.setStyle("default");
+            toolBarBottom.show();
+            
+            // Functions to switch between different tableViews ==================
+            function switchToPlain() {
+                plainTableView.show();
+                groupedTableView.hide();
+            }
+            
+            function switchToGrouped() {
+                plainTableView.hide();
+                groupedTableView.show();
+            }
+            
+            // Callback for deleting rows in tableView
+            function itemRemoved(section, rowInSection) {
+                NKAlert("Row removed", "at section:"+section+" row:"+rowInSection);
+            }
+            
+            // Callback for clicking rows in tableView =====================================
+            function onRowClick() {NKAlert('Row clicked!', 'You clicked one of the rows in the tableview!');}
+            
+            function goBack() {NKMoveToPageAnimated("nktableview.html", "flipleft");}
+            
+            </script>
+        
+    </body>
+</html>
