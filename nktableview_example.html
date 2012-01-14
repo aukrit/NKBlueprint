@@ -54,12 +54,66 @@
             image.loadFromBundle("annoicon.png");
             groupedTableView.insertRecord('Third row', 'nice image huh?!', image, 1, '', "onRowClick()");
             
+            
+            //	Init indexed tableview ==================================================
+            var indexTableView = new NKTableView();
+            indexTableView.init(0, 0, 320, 300, 'plain');
+            
+            // Enable index
+            indexTableView.setShowsIndex('yes');
+            
+            // Create categories
+            //
+            // Index is built by first letter of the categories names, 
+            // so it's important that you name your categories right
+            indexTableView.insertCategoryNamed('A');
+            indexTableView.insertCategoryNamed('B');
+            indexTableView.insertCategoryNamed('Category C');
+            indexTableView.insertCategoryNamed('D');
+            indexTableView.insertCategoryNamed('E');
+            indexTableView.insertCategoryNamed('F');
+            indexTableView.insertCategoryNamed('G');
+            indexTableView.insertCategoryNamed('H');
+            indexTableView.insertCategoryNamed('I');
+            indexTableView.insertCategoryNamed('Jokers');
+            
+            // Insert records
+            indexTableView.insertRecord("A", "", "", 0, "", "");
+            indexTableView.insertRecord("AA", "", "", 0, "", "");
+            indexTableView.insertRecord("AAA", "", "", 0, "", "");
+            
+            indexTableView.insertRecord("B", "", "", 1, "", "");
+            indexTableView.insertRecord("BB", "", "", 1, "", "");
+            indexTableView.insertRecord("BBB", "", "", 1, "", "");
+            
+            indexTableView.insertRecord("F", "", "", 5, "", "");
+            indexTableView.insertRecord("FF", "", "", 5, "", "");
+            indexTableView.insertRecord("FFF", "", "", 5, "", "");
+            
+            indexTableView.insertRecord("H", "", "", 7, "", "");
+            indexTableView.insertRecord("HH", "", "", 7, "", "");
+            indexTableView.insertRecord("HHH", "", "", 7, "", "");
+            
+            indexTableView.insertRecord("Joker 1", "", "", 9, "", "");
+            indexTableView.insertRecord("The Joker", "", "", 9, "", "");
+            indexTableView.insertRecord("Joker 3", "", "", 9, "", "");
+
+
+
+
+            
+            
+            
+            
+            
+
+            
             // Create a toolbar at bottom of screen ===========================
             var toolBarBottom = new NKToolBar();
             toolBarBottom.init(323);
             toolBarBottom.addButton("Plain", "", "switchToPlain()");
-            toolBarBottom.addFlexibleSpace();
             toolBarBottom.addButton("Grouped", "", "switchToGrouped()");
+            toolBarBottom.addButton("With index", "", "switchToIndexed()");
             toolBarBottom.addFlexibleSpace();
             toolBarBottom.addDoneButton("Back", "goBack");
             toolBarBottom.setStyle("default");
@@ -69,11 +123,19 @@
             function switchToPlain() {
                 plainTableView.show();
                 groupedTableView.hide();
+                indexTableView.hide();
             }
             
             function switchToGrouped() {
                 plainTableView.hide();
                 groupedTableView.show();
+                indexTableView.hide();
+            }
+            
+            function switchToIndexed() {
+                indexTableView.show();
+                plainTableView.hide();
+                groupedTableView.hide();
             }
             
             // Callback for deleting rows in tableView
