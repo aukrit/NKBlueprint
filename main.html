@@ -29,8 +29,71 @@ navController.setTintColor(50, 115, 173);			/* Sets the NavController bar color 
 navController.setImage("nkbpnavbarlogo.png");		/* Adds an image (transparent png) to the NavController, replaces title "Home" */
 //navController.setUsesPreloading("yes");			/* Tells NavController to preload pages before moving to them */
 
-</script>
+    // TableView =============================================================
+    var tableView = new NKTableView();
+    tableView.init(0, 0, 320, 367, 'grouped');
+    tableView.show();
+    
+    tableView.insertCategoryNamed('Alerts');
+    tableView.insertRecord('NKActivityIndicator', '', '', 0, '', "browseTo('nkactivityindicator.html')");
+    tableView.insertRecord('NKAlert', '', '', 0, '', "browseTo('nkalert.html')");
+    tableView.insertRecord('NKAlertSheet', '', '', 0, '', "browseTo('nkalertsheet.html')");
+    
+    tableView.insertCategoryNamed('Audio/Visual');
+    tableView.insertRecord('NKInternetPlayer', '', '', 1, '', "browseTo('nkinternetplayer.html')");
+    tableView.insertRecord('NKAudioPlayer', '', '', 1, '', "notReady()");
+    tableView.insertRecord('NKVideoPlayer', '', '', 1, '', "notReady()");
 
+    tableView.insertCategoryNamed('Text');
+    tableView.insertRecord('NKLabel', '', '', 2, '', "browseTo('nklabel.html')");
+    tableView.insertRecord('NKTextView', '', '', 2, '', "notReady()");
+    tableView.insertRecord('NKTextField', '', '', 2, '', "notReady()");
+    
+    tableView.insertCategoryNamed('Views');
+    tableView.insertRecord('NKTableView', '', '', 3, '', "browseTo('nktableview.html')");
+    tableView.insertRecord('NKMapView', '', '', 3, '', "browseTo('nkmapview.html')");
+    
+    tableView.insertCategoryNamed('External Messaging');
+    tableView.insertRecord('NKMailComposer', '', '', 4, '', "browseTo('nkmailcomposer.html')");
+    tableView.insertRecord('NKSMSComposer', '', '', 4, '', "notReady()");
+    
+    tableView.insertCategoryNamed('Modal Windows');
+    tableView.insertRecord('NKModalWindow', '', '', 5, '', "browseTo('nkmodalwindow.html')");
+    
+    tableView.insertCategoryNamed('Files');
+    tableView.insertRecord('NKFile', '', '', 6, '', "notReady()");
+    tableView.insertRecord('NKFileDownloader', '', '', 6, '', "notReady()");
+    
+    tableView.insertCategoryNamed('Toolbar');
+    tableView.insertRecord('NKToolbar', '', '', 7, '', "browseTo('nktoolbar.html')");
+    
+    tableView.insertCategoryNamed('Controls');
+    tableView.insertRecord('NKSwitch', '', '', 8, '', "browseTo('nkswitch.html')");
+    tableView.insertRecord('NKSystemVolumeControl', '', '', 8, '', "browseTo('nksystemvolumecontrol.html')");
+    tableView.insertRecord('NKProgressBar', '', '', 8, '', "browseTo('nkprogressbar.html')");
+    tableView.insertRecord('NKSlider', '', '', 8, '', "browseTo('nkslider.html')");
+    
+    tableView.insertCategoryNamed('DataBases');
+    tableView.insertRecord('NKSQLite', '', '', 9, '', "browseTo('nksqlite.html')");
+    tableView.insertRecord('WebStorage', '', '', 9, '', "notReady()");
+    
+    tableView.insertCategoryNamed('NimbleKit Functions');
+    tableView.insertRecord('NKGetUniqueIdentifier', '', '', 10, '', "browseTo('nkgetuniqueidentifier.html')");
+    tableView.insertRecord('NKGetDeviceType', '', '', 10, '', "browseTo('nkgetdevicetype.html')");
+    tableView.insertRecord('NKIsInternetAvailableVia...', '', '', 10, '', "browseTo('nkisinternetavailablevia.html')");
+    
+    
+    function browseTo(page) {
+        navController.gotoPage(page);
+    }
+    
+    function notReady() {
+        NKAlert('Not ready', 'This part of the project is yet to be done...');
+    }
+    
+</script>
+    
+<!--
 <h2>Alerts</h2>
 <ul>
 <li><a onClick="navController.gotoPage('nkactivityindicator.html')">NKActivityIndicator</a></li>
@@ -96,6 +159,7 @@ navController.setImage("nkbpnavbarlogo.png");		/* Adds an image (transparent png
 <li><a onClick="navController.gotoPage('nkgetdevicetype.html')">NKGetDeviceType</a></li>
 <li><a onClick="navController.gotoPage('nkisinternetavailablevia.html')">NKIsInternetAvailableVia...</a></li>
 </ul>
+-->
 
 </body>
 </html>
