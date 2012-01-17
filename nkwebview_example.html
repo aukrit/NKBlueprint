@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+        
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="NKit.js"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+        
+    </head>
+	
+    <body>
+        
+        <div class="greybutton" OnClick="loadExternalPage()">Show external webpage (nimblekit.com)</div>
+        <div class="greybutton" OnClick="goBack()">Go back</div>
+        
+        <script type="text/javascript">
+            //  ===========================================================
+            //  Init controls in global scope for access from all functions
+            //
+            
+            // Init webView
+            var webView = new NKWebView;
+            // Init toolbar
+            var toolbar = new NKToolBar;
+            // Init webloader
+            var modal = new NKModalWindow();
+            var webloader = new NKActivityIndicator();
+            
+            //  ==========================================================
+            //  Function to close webView
+            //
+            function closeWebView() {
+                NKLog('Closing webView');
+                toolbar.destroy();
+                webView.hide();
+                webloader.hide();
+            } // END function closeWebView()
+            
+            
+            //  ===========================================================
+            //  Function to load external page
+            //
+            function loadExternalPage() {
+                // Set URL to open
+                var url = 'http://nimblekit.com';
+                //  Init webView
+                webView.init(0,0,320,416);
+                //  Setup toolbar
+                toolbar.init(416);
+                toolbar.setStyle('default');
+                toolbar.addButton('Open in Safari', "Compass.png", "openInSafari()");
+                toolbar.addButton("Go back", "arrow_left.png", "webView.goBack()");
+                toolbar.addButton("Go forward", "arrow_right.png", "webView.goForward()");
+                toolbar.addButton("Reload", "", "webView.reload()");
+                toolbar.addFlexibleSpace();
+                toolbar.addDoneButton('Close webView', "closeWebView()");
+                toolbar.show();
+                
+                //  Show modal window with loader 
+                modal.show();
+                
+                //  Setup spinner
+                webloader.init(150,240,10,"white");
+                webloader.spin();
+                webloader.show();
+                modal.addControl(webloader);
+
+                //  Open URL in webView
+                webView.loadURL(url);
+                webView.setScalesToFit("yes");
+                webView.show();
+                
+                //  Set callback for when page finished loading
+                webView.setOnFinishCallback("hideWebloader");
+                
+            } // END function loadExternalPage
+            
+            
+            //  Function that hides spinner once page finished loading
+            function hideWebloader() {
+                NKLog('Loading finished, hiding webloader');
+                modal.dismiss();
+            }
+            
+            //  Function to open current URL in Safari-app
+            function openInSafari() {
+                NKLog('Opening '+curURL+' in safari'); //DEBUG
+                NKOpenURLInSafari(curURL);
+            }            
+
+            
+            function goBack() {NKMoveToPageAnimated("nkwebview.html", "flipleft");}
+            
+            </script>
+        
+    </body>
+</html>
