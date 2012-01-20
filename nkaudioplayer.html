@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="NKit.js"></script>			<!-- Link to NimbleKit js file -->
+<script type="text/javascript" src="javascript.js"></script>	<!-- Link to custom js file (user created) NB:Remove from compile sources -->
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+	
+// NavController =============================================================
+var navController = new NKNavigationController();
+navController.setTitle("NKAudioPlayer");
+navController.setTintColor(50, 115, 173);
+
+// AudioPlayers ==============================================================
+    
+</script>
+
+<div class="greybutton" onClick="NKMoveToPageAnimated('nkaudioplayer_example.html', 'flipRight')">Show NKAudioPlayer Example</div>	
+
+<div class="infobox">
+<h1>NKAudioPlayer</h1>
+<h2>Description</h2>
+<p>NKAudioPlayer is used to play audio files bundled in the application</p>
+
+<h2>Usage</h2>
+
+	<p class="code">
+	<b>loadFile(fileName)</b><br/>
+	Loads the content of file specified by fileName parameter and prepares it to play<br/>
+	</p>
+	<p class="code">
+	<b>loadFileFromDocuments(fileName)</b><br/>
+	Loads the content of file and prepares it to play, looking for given file name in documents folder<br/>
+	</p>
+	<p class="code">
+	<b>play()</b><br/>
+	starts to play loaded file<br/>
+	</p>
+	<p class="code">
+	<b>stop()</b><br/>
+	stops currently playing audio<br/>
+	</p>
+	<p class="code">
+	<b>pause()</b><br/>
+	pauses currently played audio<br/>
+	</p>
+	<p class="code">
+	<b>resume()</b><br/>
+	resumes playback from paused state<br/>
+	</p>
+	<p class="code">
+	<b>getDurationInSeconds()</b><br/>
+	returns integer value specifying duration in seconds of the loaded audio<br/>
+	</p>
+	<p class="code">
+	<b>setPositionInSeconds(seconds)</b><br/>
+	</p>
+	<p class="code">
+	sets playback position in seconds<br/>
+	</p>
+	<p class="code">
+	<b>getCurrentPositionInSeconds()</b><br/>
+	returns current position measured in seconds<br/>
+	</p>
+	<p class="code">
+	<b>setPlayingFinishedCallback(callback)</b><br/>
+	Used to get information about when playback finished<br/>
+	<b>callback</b>: function name to be called when playback finished<br/>
+	</p>
+	<p class="code">
+	<b>setLoopMode(isInLoop)</b><br/>
+	sets if player should repeat loaded file, can take argument "yes", "no", "1" and "0"<br/>
+	</p>
+	<p class="code">
+	<b>setVolume(volume)</b><br/>
+	sets current volume for player, parameter has to be in range [0..100]<br/>
+	</p>
+	<p class="code">
+	<b>dispose()</b><br/>
+	disposes resources allocated for player<br/>
+	</p>
+
+
+</div>
+			    
+
+</body>
+</html>

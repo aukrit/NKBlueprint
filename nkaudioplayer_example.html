@@ -1,0 +1,154 @@
+<html>
+<head>
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no" />
+
+<script type="text/javascript" src="NKit.js"></script>			<!-- Link to NimbleKit js file -->
+<script type="text/javascript" src="javascript.js"></script>	<!-- Link to custom js file (user created) NB:Remove from compile sources -->
+
+<style type="text/css">
+	html, body {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		color: #333;
+		text-shadow:1px 1px 0 #fff;
+		font-family: "Arial Rounded MT Bold";
+		background: url('nk_background.png');
+		-webkit-tap-highlight-color: none;
+	}
+	
+	h2	{
+		padding-left: 10px;
+	}
+	
+	/* Buttons For Radio Controls */
+	
+	#segment {margin:10px;}
+	
+	.segmented_control {display: inline-block;}
+	
+	.segmented_control button {
+		margin: 0;
+		padding: 10px 10px;
+		border: 1px solid #777;
+		text-shadow: 0 1px 0 #fff;
+		font-size: 12px;
+		font-family: "Arial Rounded MT Bold";
+		background: #eee;
+		background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+		width:75px;
+		height:75px;
+	}
+	
+	.segmented_control button.left {
+		border-right: 0;
+		border-radius: 10px 0 0 10px;
+		-webkit-background-clip: padding-box;
+	}
+	
+	.segmented_control button.middle {
+		margin-left: -5px;
+		border-right: 0;
+	}
+	
+	.segmented_control button.right {
+		margin-left: -5px;
+		border-radius: 0 10px 10px 0;
+		-webkit-background-clip: padding-box;
+	}
+	
+	.segmented_control button:active {
+		background: #ccc;
+		background: -webkit-gradient(linear, left top, left bottom, from(#d2ff52), to(#91e842));
+		text-shadow: 0 1px 0 #eee;
+		-webkit-box-shadow: inset 0 1px 4px #000;
+		box-shadow: inset 0 1px 4px #000;
+		-webkit-tap-highlight-color:rgba(255,255,255,0);
+		-webkit-user-select: none;
+	} 
+</style>
+
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+// Prevent Page Scroll =======================================================
+	document.ontouchmove = function(event){event.preventDefault();}	
+	
+// AudioPlayers ==============================================================
+	
+	// Looped Player
+	var loopBeat = new NKAudioPlayer();	// Create a new instance of NKAudioPlayer
+	loopBeat.loadFile("beat.caf");		// Assign a sound file
+	loopBeat.setLoopMode("YES");		// Make the player loop
+
+	function playLoopBeat() 
+	{ loopBeat.play(); }				// Play the file
+	
+	function stopLoopBeat() 
+	{ loopBeat.stop(); }				// Stop the player
+	
+	function pauseLoopBeat() 
+	{ loopBeat.pause(); }				// Pause the player
+	
+	function resumeLoopBeat() 
+	{ loopBeat.resume(); }				// Resume playback
+	
+	
+	
+	// Single Shot Sounds
+	var accent1 = new NKAudioPlayer();
+	accent1.loadFile("accent1.caf");
+	
+	function playAccent1() 
+	{ accent1.play(); }
+	
+	var accent2 = new NKAudioPlayer();
+	accent2.loadFile("accent2.caf");
+	
+	function playAccent2() 
+	{ accent2.play(); }
+	
+	var accent3 = new NKAudioPlayer();
+	accent3.loadFile("accent3.caf");
+	
+	function playAccent3() 
+	{ accent3.play(); }
+
+
+// goBack() - Flips Left, back to nkaudioplayer.html ========================
+	function goBack() { NKMoveToPageAnimated("nkaudioplayer.html", "flipleft"); }
+	
+</script>
+
+
+
+<h2>Looped Beat</h2>
+
+<div id="segment">
+	<div class="segmented_control">
+		<button type="button" class="left" onClick="playLoopBeat()">Play</button>
+		<button type="button" class="middle" onClick="stopLoopBeat()">Stop</button>
+		<button type="button" class="middle" onClick="pauseLoopBeat()">Pause</button>
+		<button type="button" class="right" onClick="resumeLoopBeat()">Resume</button>
+	</div>
+</div>
+
+
+
+<h2>Accents</h2>
+			    
+<div id="segment">
+	<div class="segmented_control">
+		<button type="button" class="left" onClick="playAccent1()">1 &#9834;</button>
+		<button type="button" class="middle" onClick="playAccent2()">2 &#9834;</button>
+		<button type="button" class="middle" onClick="playAccent3()">3 &#9834;</button>
+		<button type="button" class="right" onClick="goBack()">Back &#x27A5;</button>
+
+	</div>
+</div>	
+	
+</body>
+</html>
